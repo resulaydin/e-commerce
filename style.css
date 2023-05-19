@@ -55,9 +55,9 @@ header {
 }
 
 .header-row {
-  height: 90px;
   display: flex;
   align-items: center;
+  height: 90px;
 }
 .header-wrapper {
   display: flex;
@@ -80,10 +80,73 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.2px;
+  position: relative;
 }
-.header-center .menu-list i {
+.header-center .menu-list .menu-list {
   font-size: 12px;
 }
+
+.header-center .menu-list .menu-list-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 90px;
+}
+
+.header-center .menu-list .menu-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #1367ef;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: width 0.2s;
+}
+.header-center .menu-list .menu-link.active::after {
+  width: 100%;
+}
+.header-center .menu-list .menu-list-item:hover .menu-link::after {
+  width: 100%;
+}
+
+/*? Menu dropdown list start */
+
+.header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+header .menu-dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.2s;
+}
+.menu-dropdown-content {
+  width: 220px;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0;
+}
+.menu-dropdown-content a {
+  display: flex;
+  padding: 4px 30px;
+  font-size: 14px;
+  transition: color ease 0.2s;
+}
+.menu-dropdown-content a:hover {
+  color: #1367ef;
+}
+
+/*? Menu dropdown list end */
+
 .header-right .header-right-links {
   display: flex;
   align-items: center;
@@ -103,7 +166,7 @@ header {
 .header-right .header-cart {
   position: relative;
 }
-.header-cart .header-cart-link span {
+.header-cart .header-cart-count {
   position: absolute;
   font-size: 10px;
   width: 16px;
