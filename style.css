@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
 
+/*! Base start*/
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 }
 
 ul,
-li {
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -28,3 +29,95 @@ h6,
 p {
   margin: 0;
 }
+.container {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*! Base end*/
+
+/*! header start */
+header {
+  border-bottom: 1px solid #dee0ea;
+}
+.global-notification {
+  background-color: #1367ef;
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.global-notification a {
+  color: white;
+  font-weight: 600;
+}
+
+.header-row {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.header-center .navigation .menu-list {
+  display: flex;
+  column-gap: 30px;
+  text-align: center;
+}
+.header-center .menu-list .menu-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+.header-center .menu-list i {
+  font-size: 12px;
+}
+.header-right .header-right-links {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.header-right .bi-person {
+  font-size: 23px;
+}
+.header-right .toggle-button {
+  background-color: transparent;
+  border: none;
+}
+.header-right i {
+  font-size: 18px;
+  display: flex;
+}
+.header-right .header-cart {
+  position: relative;
+}
+.header-cart .header-cart-link span {
+  position: absolute;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #1367ef;
+  color: white;
+  top: -11px;
+  right: -11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+/*! header end */
