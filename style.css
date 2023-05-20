@@ -40,6 +40,7 @@ p {
 /*! header start */
 header {
   border-bottom: 1px solid #dee0ea;
+  position: relative;
 }
 .global-notification {
   background-color: #1367ef;
@@ -82,9 +83,6 @@ header {
   letter-spacing: 1.2px;
   position: relative;
 }
-.header-center .menu-list .menu-list {
-  font-size: 12px;
-}
 
 .header-center .menu-list .menu-list-item {
   display: flex;
@@ -107,7 +105,12 @@ header {
 .header-center .menu-list .menu-link.active::after {
   width: 100%;
 }
-.header-center .menu-list .menu-list-item:hover .menu-link::after {
+/* .header-center 
+.menu-list 
+.menu-list-item:hover 
+.menu-link:hover::after { width:100%; }*/
+
+.header-center .menu-list .menu-link:hover::after {
   width: 100%;
 }
 
@@ -146,6 +149,85 @@ header .menu-dropdown-wrapper {
 }
 
 /*? Menu dropdown list end */
+
+/*? Megamenu dropdown list start */
+
+/* .megamenu-wrapper {
+  position: static !important;
+}
+.megamenu-wrapper .menu-dropdown-wrapper {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  column-gap: 50px;
+  border: 2px solid red;
+  z-index: 1;
+}
+.menu-dropdown-megamenu {
+  display: flex;
+  column-gap: 50px;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  padding: 22px;
+}
+.menu-dropdown-megamenu .megamenu-links {
+  display: flex;
+  column-gap: 50px;
+} */
+
+.megamenu-wrapper {
+  position: static !important;
+}
+
+.megamenu-wrapper .menu-dropdown-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+}
+
+.menu-dropdown-megamenu {
+  background-color: white;
+  border: 1px solid #dee0ea;
+  padding: 22px;
+  display: flex;
+  column-gap: 50px;
+}
+.megamenu-links {
+  display: flex;
+  column-gap: 50px;
+}
+
+.megamenu-wrapper .megamenu-menu-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.megamenu-wrapper .megamenu-menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.megamenu-wrapper .megamenu-menu-list a {
+  font-size: 14px;
+}
+.megamenu-wrapper .megamenu-single-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.megamenu-wrapper .megamenu-single-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.megamenu-wrapper .megamenu-single-button {
+  margin-top: 5px;
+}
+.btn-sm {
+  line-height: 33px;
+}
+
+/*? Megamenu dropdown list end */
 
 .header-right .header-right-links {
   display: flex;
