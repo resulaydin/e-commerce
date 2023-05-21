@@ -1,0 +1,160 @@
+
+.modal-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+  }
+  .modal-search::after {
+    /* Burası arkaplanın %50 siyah görünemsi için tam sayfa */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+  .modal-wrapper {
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    z-index: 10;
+  
+    background-color: #fff;
+  }
+  .modal-search .modal-title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .modal-search .modal-text {
+    font-size: 14px;
+    color: #7a7a7a;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee0ea;
+  }
+  .modal-search .search-form {
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    max-height: 42px;
+  }
+  .modal-search .search-form::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dee0ea;
+    bottom: -15px;
+    position: absolute;
+  }
+  
+  .modal-search .search-form input {
+    width: 100%;
+    max-height: 42px;
+    border-color: #dee0ea !important;
+    border-right: none;
+  }
+  .modal-search .search-form button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid #dee0ea;
+  
+    border: 1px solid #dee0ea;
+  }
+  .modal-search .search-form button i {
+    font-size: 18px;
+    color: #7a7a7a;
+  }
+  
+  .modal-search .search-result {
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 30px;
+  }
+  
+  .search-result .search-heading {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #dee0ea;
+    border-bottom: none;
+  }
+  .search-result .search-heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .modal-search .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #dee0ea;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+  .modal-search .result-item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 15px;
+    border-right: 1px solid #dee0ea;
+    border-bottom: 1px solid #dee0ea;
+    transition: background-color ease 0.2s;
+  }
+  .modal-search .results .result-item:hover {
+    background-color: #f9f9f9;
+  }
+  .modal-search .search-info {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 2px; */
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .modal-search .search-thumb {
+    max-width: 65px;
+    width: 100%; /*Burası neden 100% oldu*/
+  }
+  .modal-search .search-sku {
+    margin: 2px 0;
+    color: #7a7a7a;
+  }
+  .modal-search .search-price {
+    color: #dc3545;
+    font-weight: 600;
+  }
+  
+  .modal-search .bi-x-circle {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+  /* Modal Responsive  */
+
+  @media (max-width: 992px) {
+  
+    .modal-search .modal-wrapper {
+      max-width: 370px;
+      height: 80%;
+      overflow: auto;
+    }
+    .modal-search .results {
+      grid-template-columns: 1fr;
+      overflow: auto;
+    }
+  }
