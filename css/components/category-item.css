@@ -1,0 +1,24 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories .category-list {
+  margin: 40px 0;
+}
+
+.categories .category-item {
+    width: 100%;
+    display: flex;
+}
+.categories .category-item a{
+    display: inline-block;
+    
+}

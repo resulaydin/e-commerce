@@ -1,0 +1,16 @@
+
+.section-title{
+text-align: center;
+margin-bottom: 4px;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+/*! categories start  */
+.categories{
+    margin: 40px 0;
+}
+/*! categories end  */
