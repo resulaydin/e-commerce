@@ -42,6 +42,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 8px;
+  padding-bottom: 15px;
 }
 .products .product-item .product-price strong {
   color: #ff3c20;
@@ -51,7 +52,6 @@
   color: #7d7d7d;
   font-size: 12px;
   text-decoration: line-through;
-  padding-bottom: 15px;
 }
 .products .product-discount {
   position: absolute;
