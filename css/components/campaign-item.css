@@ -38,13 +38,13 @@
 }
 
 @media (max-width: 768px) {
-  .campaigns .container .campaigns-wrapper {
+  /* .campaigns .container .campaigns-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  /* .campaigns .campaign-item {
-    width: 100%;
-    flex: unset;
   } */
+  .campaigns .campaign-item {
+    width: 100%;
+    flex: unset !important;
+  }
 
 }

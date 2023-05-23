@@ -39,11 +39,6 @@ header {
     font-size: 24px;
     cursor: pointer;
   }
-  
-  
-  
-  
-  
   /*? Mobil header list end */
   
   
@@ -55,6 +50,9 @@ header {
     display: flex;
     column-gap: 30px;
     text-align: center;
+  }
+  .header-center .navigation .menu-list i {
+    font-size: 12px;
   }
   .header-center .menu-list .menu-link {
     font-size: 14px;
