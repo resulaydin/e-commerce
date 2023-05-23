@@ -1,0 +1,12 @@
+.brands .brand-list .brand-item{
+    padding: 25px 15px;
+}
+.brands .brand-item .brand-image{
+    opacity: 0.5;
+    transition: opacity ease 0.3s;
+}
+.brands .brand-item .brand-image:hover{
+    opacity: 1;
+}
+
+

@@ -51,6 +51,7 @@
 }
 /*! campaigns end  */
 
+/*! blogs start  */
 .blogs {
   margin:40px 0;
 }
@@ -63,3 +64,23 @@
   gap: 30px;
   margin:30px 0;
 }
+
+/*! blogs end  */
+
+/*! brands start  */
+.brands{
+  margin:40px 0;
+}
+
+.brands .brand-list{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border:1px solid #dee3ea;
+}
+
+/*! brands end  */
+
