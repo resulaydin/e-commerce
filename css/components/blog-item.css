@@ -1,0 +1,57 @@
+.blogs .blog-list .blog-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  /* box-shadow: 5px 10px 18px #888888; */
+}
+.blogs .blog-list .blog-image {
+  display: flex;
+}
+.blogs .blog-list .blog-image img {
+  width: 100%;
+}
+.blogs .blog-list .blog-info {
+  padding: 30px 10px 25px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /* orginal kod box-shadow buraya yazılmış */
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+.blog-list .blog-info .blog-info-top {
+  font-size: 14px;
+  color: #b2b3b8;
+}
+.blog-list .blog-info .blog-info-center a {
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-list .blog-info .blog-info-bottom a {
+  font-size: 14px;
+  border-bottom: 1px solid;
+  padding-bottom: 4px;
+  display: inline-block;
+  /* Bu değerin verilebilmesi için
+    a etiketinin inline level' den çıkarılması lazım.
+    O yüzden inline-block yazıldı
+  */
+  transition: color ease .2s;
+}
+.blog-list .blog-info .blog-info-bottom a:hover {
+
+    color:#1367ef;
+}
+
+/* @media (max-width:768px) {
+    .blogs .blog-list .blog-item {
+        flex: unset !important;
+    }
+} */
+@media (max-width:768px) {
+    .blogs .blog-list .blog-item {
+        display: grid;
+        flex: unset;
+        grid-template-columns: 1fr;
+    }
+}

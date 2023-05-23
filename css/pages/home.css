@@ -41,7 +41,7 @@
 /*! products end  */
 /*! campaigns start  */
 .campaigns {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 .campaigns .campaigns-wrapper {
   display: flex;
@@ -50,3 +50,16 @@
   margin: 30px 0;
 }
 /*! campaigns end  */
+
+.blogs {
+  margin:40px 0;
+}
+
+.blogs .blog-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin:30px 0;
+}
