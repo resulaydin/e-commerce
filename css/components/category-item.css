@@ -1,24 +1,42 @@
-.categories {
+.categories .category-item {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+.categories .category-item a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.categories .container {
-  display: flex;
-  flex-direction: column;
+.categories .category-item .category-image {
+  width: 100%;
+  transition: transform ease .2s;
+}
+.categories .category-item .category-image:hover {
+  transform: scale(1.1);
+}
+.categories .category-item .category-title {
+  margin-top: 2px;
 }
 
-.categories .category-list {
-  margin: 40px 0;
-}
-
-.categories .category-item {
-    width: 100%;
-    display: flex;
-}
-.categories .category-item a{
-    display: inline-block;
-    
-}
+@media (max-width: 768px) {
+  /*
+     .categories .category-list{ 
+      Bu şekilde yazdığımda kodlar çalışmadı bu yüzden ilgili
+      html kodunda category-list-wrapper adında bir kapsayıcı
+      div oluşturuldu ve 3. aşama path ile çağrıldı aşağıdaki
+      gibi ve kod çalıştı.
+    */
+    .categories .category-list-wrapper .category-list{
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  }
+} /* 
+@media (max-width:576px) {
+  .categories .category-list{
+    grid-template-columns: 1f 1f 1f;
+  }
+} */

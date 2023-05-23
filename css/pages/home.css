@@ -7,10 +7,18 @@ margin-bottom: 4px;
     font-size: 32px;
     font-weight: 600;
     line-height: 0.8;
+    margin-bottom: 4px;
 }
 
 /*! categories start  */
 .categories{
     margin: 40px 0;
+}
+.categories .category-list{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 30px;
 }
 /*! categories end  */
