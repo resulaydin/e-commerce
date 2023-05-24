@@ -81,6 +81,39 @@
   flex-wrap: wrap;
   border:1px solid #dee3ea;
 }
-
 /*! brands end  */
+
+
+/*! campaign-single start  */
+.campaign-single{
+  margin:40px 0;
+  background-image: url(../../img/single-campaign.png);
+  background-attachment: fixed;
+  background-position: 60% 5rem;
+}
+
+.campaign-single .campaign-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 140px 15px ;
+}
+/*! campaign-single  end  */
+
+
+
+/*! policies start  */
+
+.policies{
+  border-top: 1px solid #dee3ea;
+  margin-top:40px;
+}
+
+.policies .policies-wrapper{
+  display: flex;
+}
+
+/*! policies end  */
 
