@@ -1,0 +1,45 @@
+.policies .policies-wrapper .policy-list{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding:25px 0px;
+}
+
+.policies .policy-list .policy-item{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.policies .policy-item .policy-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.policies .policy-list .policy-item i{
+    font-size: 50px;
+    display: flex;
+}
+.policies .policy-item .policy-text strong{
+    font-weight: 600;
+}
+.policies .policy-item .policy-text span{
+    font-size:12px
+}
+
+@media (max-width:768px) {
+    /* .policies .policies-wrapper .policy-list{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    } */
+    .policies .policies-wrapper .policy-list{
+        flex: unset;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+    .policies .policy-list .policy-item{
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
