@@ -73,6 +73,7 @@
 
 .footer .widgets-row {
   padding: 60px 0;
+  border-bottom: 1px solid #dee0ea;
 }
 .footer .widgets-row .widget-row-wrapper {
   display: flex;
@@ -83,24 +84,20 @@
 .footer .widgets-row .brand-info {
   flex: 3;
 }
-.footer .widgets-row .brand-info .widget-desc {
-    margin:15px 0;
-}
 .footer .widgets-row .widget-nav-menu {
-  padding-right: 80px;
+  flex: 1;
 }
-.footer .widgets-row .widget-nav-menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .footer .widgets-row .brand-info .widget-desc {
+  margin: 15px 0;
   max-width: 400px;
   font-size: 14px;
 }
+
 .footer .widgets-row .brand-info .widget-contact {
   font-size: 14px;
 }
+
 .footer .widgets-row .widget-nav-menu h4 {
   font-size: 15px;
   font-weight: 600;
@@ -110,13 +107,86 @@
   font-size: 13px;
   display: flex;
   flex-direction: column;
-  row-gap: 3px;
+  row-gap: 5px;
 }
 
 /*! widget end */
+
+
+/*! copyright start */
+
+.footer .copyright-row{
+    padding:40px 0;
+}
+.footer .copyright-row-wrapper{
+    display: flex;
+}
+.footer .copyright-row-wrapper>p{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.footer .copyright-row-wrapper .footer-menu{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.footer .copyright-row-wrapper .footer-menu ul{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    column-gap: 10px;
+}
+.footer .copyright-row-wrapper .menu-list .list-item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid #dee0ea;
+}
+
+
+/*! copyright end */
+
+
+/*!Responsive Footer - Subscribe  start */
 
 @media (max-width: 768px) {
   .footer .subscribe-row-wrapper {
     row-gap: 50px;
   }
 }
+
+/*!Responsive Footer - Subscribe  end */
+/*!Responsive Footer - Widget  start */
+@media (max-width: 768px) {
+  .footer .widgets-row .brand-info {
+    margin-bottom: 20px;
+  }
+  .footer .widgets-row .brand-info,
+  .footer .widgets-row .widget-nav-menu {
+    flex: unset;
+  }
+
+  /* 1. Yöntem   
+  .footer .widgets-row .widget-row-wrapper {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  }
+  .footer .widgets-row .widget-row-wrapper .brand-info{
+    grid-row: 1/2;
+    grid-column: 1/5;
+  } 
+  */
+}
+
+/*!Responsive Footer - Widget  end */
+
+/*!Responsive Footer - Copyright  start */
+@media (max-width: 768px) {
+    .footer .copyright-row-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+    .footer .copyright-row-wrapper .footer-menu {
+        margin-right: auto;
+    }
+  }
+/*!Responsive Footer - Copyright  end */
