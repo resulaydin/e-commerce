@@ -1,0 +1,78 @@
+.footer {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .subscribe-row {
+  padding: 80px 0;
+  background-color: black;
+  color: white;
+}
+
+.footer .subscribe-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-subscribe-wrapper,
+.footer .footer-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.footer .subscribe-title,
+.footer .contact-title {
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 500px;
+  line-height: 1.2;
+}
+
+.footer form {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+.footer form input {
+  height: 48px;
+  flex:1;
+}
+.footer form button {
+  height: 48px !important;
+  border-color: #fff;
+  background-color: black;
+  color: white;
+}
+
+.footer .subscribe-row-wrapper .subscribe-desc {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+.footer .privacy-text {
+  font-size: 10px;
+  color: #75767c;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.footer .privacy-text a {
+  font-size: 10px;
+  color: #aaaaaa;
+  font-weight: 500;
+}
+
+.footer .footer-contact-bottom .download-app{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+@media (max-width:768px) {
+    .footer .subscribe-row-wrapper{
+        row-gap: 50px;
+    }
+}
