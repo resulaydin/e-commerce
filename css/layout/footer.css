@@ -1,5 +1,4 @@
 .footer {
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +37,7 @@
 }
 .footer form input {
   height: 48px;
-  flex:1;
+  flex: 1;
 }
 .footer form button {
   height: 48px !important;
@@ -64,15 +63,60 @@
   font-weight: 500;
 }
 
-.footer .footer-contact-bottom .download-app{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.footer .footer-contact-bottom .download-app {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
+/*! widget start */
 
-@media (max-width:768px) {
-    .footer .subscribe-row-wrapper{
-        row-gap: 50px;
-    }
+.footer .widgets-row {
+  padding: 60px 0;
+}
+.footer .widgets-row .widget-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer .widgets-row .brand-info {
+  flex: 3;
+}
+.footer .widgets-row .brand-info .widget-desc {
+    margin:15px 0;
+}
+.footer .widgets-row .widget-nav-menu {
+  padding-right: 80px;
+}
+.footer .widgets-row .widget-nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .widgets-row .brand-info .widget-desc {
+  max-width: 400px;
+  font-size: 14px;
+}
+.footer .widgets-row .brand-info .widget-contact {
+  font-size: 14px;
+}
+.footer .widgets-row .widget-nav-menu h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer .widgets-row .widget-row-wrapper .widget-nav-menu ul {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+/*! widget end */
+
+@media (max-width: 768px) {
+  .footer .subscribe-row-wrapper {
+    row-gap: 50px;
+  }
 }
