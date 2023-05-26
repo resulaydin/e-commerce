@@ -92,7 +92,14 @@
 @media (max-width: 768px) {
   .contact-bottom .contact-message-address-wrapper {
     flex-wrap: wrap;
+    margin-top: 30px;
     gap: 40px;
+  }
+  .contact-bottom .contact-message-address-wrapper .contact-address-wrapper {
+    flex-basis: 100%;;
+  }
+  .contact-bottom .contact-info-wrapper .contact-get-in-touch {
+    max-width: 100%;
   }
   /* .contact-bottom .contact-message-address-wrapper {
     display: grid;
