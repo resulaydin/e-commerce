@@ -180,13 +180,13 @@
 /*!Responsive Footer - Copyright  start */
 @media (max-width: 768px) {
     .footer .copyright-row-wrapper {
-        display: flex;
         flex-direction: column;
         text-align: center;
         row-gap: 10px;
     }
     .footer .copyright-row-wrapper .footer-menu {
-        margin-right: auto;
+        margin-right: auto; 
+        /* margin-right:unset olabilir */
     }
   }
 /*!Responsive Footer - Copyright  end */

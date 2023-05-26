@@ -1,0 +1,102 @@
+.contact {
+}
+
+.contact .contact-bottom {
+  margin: 30px 0;
+}
+
+.contact-bottom .contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact-bottom .contact-info-wrapper .contact-get-in-touch {
+  max-width: 75%;
+}
+.contact-bottom .contact-get-in-touch .contact-address-title {
+  color: red;
+  font-weight: 500;
+}
+.contact-bottom .contact-info-wrapper .contact-address-sub-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20pxx 0;
+}
+.contact-bottom .contact-info-wrapper .contact-address-desc {
+  font-size: 14px;
+}
+
+/*! contact-message-address-wrapper  start*/
+.contact-bottom .contact-message-address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.contact-bottom .contact-form-message {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-bottom .contact-form-message > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px); /*-> 1. Yöntem */
+  font-size: 14px;
+  row-gap: 4px;
+  /*  flex: 1; -> 2. Yöntem */
+}
+.contact-bottom .contact-form-message textarea {
+  resize: vertical;
+  max-height: 100px;
+  min-height: 60px;
+}
+.contact-bottom .contact-form-message > div:nth-of-type(3) {
+  /*width: 100%; == flex-basis:100% == flex:1 == flex-grow:1*/
+  flex-basis: 100%; /*== flex-basis:100% == flex:1 == flex-grow:1*/
+}
+.contact-bottom .contact-form-message > div:nth-of-type(4) {
+  flex-basis: 100%;
+}
+
+.contact-bottom .contact-form-message span {
+  color: red;
+}
+.contact-bottom .contact-form-message .contact-send-button {
+  background-color: black;
+  color: white;
+}
+
+.contact-bottom .contact-address-wrapper {
+  flex-basis: 48%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact-bottom .contact-address-wrapper .contact-address-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact-bottom .contact-address-top .contact-address-desc {
+  margin-bottom: 10px;
+}
+.contact-bottom .contact-address-wrapper .contact-address-title {
+  margin: 10px 0;
+}
+
+/*! contact-message-address-wrapper  end*/
+
+/*! contact responsive */
+@media (max-width: 768px) {
+  .contact-bottom .contact-message-address-wrapper {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  /* .contact-bottom .contact-message-address-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: unset !important;
+  }*/
+}
