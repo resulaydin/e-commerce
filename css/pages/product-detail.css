@@ -7,3 +7,29 @@
   flex-direction: column;
   gap: 30px;
 }
+
+/*! Details-contant start */
+.details-content .site-main {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.details-content .site-main .product-gallery {
+  width: 50%;
+}
+.details-content .site-main .product-info {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .details-content .site-main {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .details-content .site-main .product-gallery,
+  .details-content .site-main .product-info {
+    width: 100%;
+  }
+}
+
+/*! Details-contant end */

@@ -1,14 +1,4 @@
-.details-content .site-main {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
-}
-.details-content .site-main .product-gallery {
-  width: 50%;
-}
-.details-content .site-main .product-info {
-  width: 50%;
-}
+
 .product-gallery .single-image-wrapper img {
   width: 100%;
 }
