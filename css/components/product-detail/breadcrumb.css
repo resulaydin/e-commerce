@@ -11,3 +11,7 @@
     margin-left: 10px;
     color: #dee0ea;
 }
+.details-top-bar .breadcrumb ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}

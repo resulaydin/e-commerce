@@ -1,0 +1,39 @@
+.details-content .site-main {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.details-content .site-main .product-gallery {
+  width: 50%;
+}
+.details-content .site-main .product-info {
+  width: 50%;
+}
+.product-gallery .single-image-wrapper img {
+  width: 100%;
+}
+.product-gallery .single-image-wrapper img:hover {
+  cursor: zoom-in;
+}
+
+.product-gallery .gallery-thumb {
+  display: flex;
+  column-gap: 10px;
+}
+.product-gallery .gallery-thumb li{
+    display: flex;
+    cursor: pointer;
+}
+
+/* Bu alan border olduğunda içeri göçmemesi için start */
+.product-gallery .gallery-thumb li img{
+   border:1px solid transparent;
+}
+.product-gallery .gallery-thumb li img.active{
+    border:1px solid black;
+}
+.product-gallery .gallery-thumb li img:hover{
+   border-color: black;
+}
+/* Bu alan border olduğunda içeri göçmemesi için end*/
+

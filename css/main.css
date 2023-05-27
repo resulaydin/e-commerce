@@ -16,6 +16,8 @@
 @import url(components/campaign-single.css);
 @import url(components/policy-item.css);
 @import url(components/product-detail/breadcrumb.css);
+@import url(components/product-detail/product-gallery.css);
+@import url(components/product-detail/product-info.css);
 
 /*! pages  */
 @import url(pages/home.css);
