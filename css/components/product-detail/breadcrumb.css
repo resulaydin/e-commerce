@@ -1,0 +1,13 @@
+.details-top-bar {
+  font-size: 12px;
+}
+
+.details-top-bar .breadcrumb ul{
+    display: flex;
+    column-gap: 10px;
+}
+.details-top-bar .breadcrumb ul li:not(:last-child):after{
+    content: "/";
+    margin-left: 10px;
+    color: #dee0ea;
+}
