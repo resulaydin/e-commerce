@@ -1,0 +1,110 @@
+/*! tab-panel-review start*/
+
+.tab-panel .tab-panel-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 80px;
+}
+/*! review-comment-wrapper start*/
+.tab-panel .review-comment-wrapper {
+  flex: 6;
+}
+.review-comment-wrapper .comment-item {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin: 20px 0;
+}
+
+.review-comment-wrapper .comment-item .comment-image img {
+  border-radius: 100%;
+}
+.review-comment-wrapper .comment-item .comment-stars {
+  display: flex;
+  font-size: 12px;
+  color: gold;
+}
+.review-comment-wrapper .comment-item .comment-meta {
+  font-size: 12px;
+  margin: 5px 0;
+}
+.review-comment-wrapper .comment-item .comment-description {
+  font-size: 14px;
+}
+/*! review-comment-wrapper end*/
+
+/*! review-form-wrapper start*/
+
+.tab-panel .review-form-wrapper {
+  flex: 7;
+}
+.tab-panel .review-form-wrapper .comment-add-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 14px;
+  padding: 20px 50px;
+  border: 1px solid #dee0ea;
+}
+.tab-panel .review-form-wrapper .comment-add-form span {
+  color: #e51414;
+}
+.tab-panel .review-form-wrapper .stars {
+  display: flex;
+  font-size: 10px;
+}
+.tab-panel .review-form-wrapper .stars .star-item {
+  display: inline-block;
+  border-right: 1px solid #dee0ea;
+  padding: 4px 10px;
+  margin-top: -5px;
+}
+.tab-panel .review-form-wrapper .stars .star-item.active i {
+  color: gold;
+}
+.tab-panel .review-form-wrapper .stars .star-item:first-child {
+  padding-left: 0;
+}
+.tab-panel .review-form-wrapper .stars .star-item:hover i {
+  color: gold;
+}
+.tab-panel .review-form-wrapper .stars .star-item i {
+  color: #dee0ea;
+  transition: color ease 0.2s;
+}
+.tab-panel .review-form-wrapper .console {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.tab-panel .review-form-wrapper textarea {
+  resize: vertical;
+}
+.tab-panel .review-form-wrapper .comment-form-remember label {
+  display: flex;
+  column-gap: 5px;
+}
+.tab-panel .review-form-wrapper input[type="submit"] {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+/*! review-form-wrapper end*/
+/*! tab-panel-review end*/
+
+/*! tab-panel end*/
+
+/*! Responsive */
+
+@media (max-width: 992px) {
+    
+  .tab-panel .review-form-wrapper {
+    flex: unset;
+    width: 100%;
+  }
+  .tab-panel .review-form-wrapper .comment-add-form {
+    padding: unset !important;
+    border:none;
+    width: 100%;
+  }
+}
