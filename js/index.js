@@ -31,6 +31,31 @@ document.addEventListener("click", function (event) {
   ) {
     sidebar.style.left = "-100%";
   }
+
+  // Modalsearch dışındaki alana tıklandığında çalıştır.
+  if (
+    !event.composedPath().includes(btnOpenModalSearch) &&
+    !event.composedPath().includes(modalWrapper)
+  ) {
+    modalSearch[0].style.visibility = "hidden"; // CCC
+  }
 });
 
 //! home sidebar start
+
+//! open modal search
+const btnOpenModalSearch = document.getElementById("search-button"); // AAA1
+const btnCloseModalSearch = document.querySelector("#btn-modal-seach-close");
+
+const modalSearch = document.getElementsByClassName("modal-search"); // CCC
+const modalWrapper = document.querySelector("#modal-wrapper");
+
+btnOpenModalSearch.addEventListener("click", function () {
+  modalSearch[0].style.visibility = "visible"; // CCC
+  modalSearch[0].style.opacity = "1";
+});
+
+btnCloseModalSearch.addEventListener("click", function () {
+  modalSearch[0].style.visibility = "hidden"; // CCC
+  modalSearch[0].style.opacity = "0";
+});
