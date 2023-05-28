@@ -1,7 +1,8 @@
+
+
 .blogs .blog-list .blog-item {
   display: flex;
   flex-direction: column;
-  flex: 1;
   text-align: center;
   /* box-shadow: 5px 10px 18px #888888; */
 }
@@ -49,9 +50,12 @@
     }
 } */
 @media (max-width:768px) {
-    .blogs .blog-list .blog-item {
-        display: grid;
-        flex: unset;
-        grid-template-columns: 1fr;
-    }
+  .blogs .blogs-wrapper .blog-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:576px) {
+  .blogs .blogs-wrapper .blog-list {
+    grid-template-columns: 1fr;
+  }
 }
