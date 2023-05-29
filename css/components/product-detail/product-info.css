@@ -1,54 +1,54 @@
-.product-info {
+.site-main .product-info {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  /* row-gap: 10px; // Glide kullanıldığı için bu kapatıldı.*/
 }
 
-.product-info .product-title {
+.site-main .product-info .product-title {
   font-weight: 600;
 }
 
-.product-info .product-review {
+.site-main .product-info .product-review {
   display: flex;
   column-gap: 8px;
   font-size: 12px;
   font-weight: 600;
 }
-.product-info .product-review .product-star {
+.site-main .product-info .product-review .product-star {
   display: flex;
 }
-.product-info .product-review .product-star i {
+.site-main .product-info .product-review .product-star i {
   color: gold;
 }
 
-.product-info .product-price s {
+.site-main .product-info .product-price s {
   font-size: 18px;
   color: #dee0ea;
 }
-.product-info .product-price strong {
+.site-main .product-info .product-price strong {
   font-size: 20px;
 }
-.product-info .product-desc {
+.site-main .product-info .product-desc {
   font-size: 14px;
   margin: 5px 0;
   line-height: 1.4;
 }
 
-.product-info .variations-form .variations {
+.site-main .product-info .variations-form .variations {
   display: flex;
   flex-direction: column;
 }
-.variations-form .variations .colors .colors-label {
+.site-main .variations-form .variations .colors .colors-label {
   font-size: 14px;
   font-weight: 500;
 }
-.variations-form .variations .colors .colors-wrapper {
+.site-main .variations-form .variations .colors .colors-wrapper {
   display: flex;
   justify-content: flex-start;
   column-gap: 5px;
   margin: 10px 0;
 }
-.variations-form .variations .colors .color-wrapper {
+.site-main .variations-form .variations .colors .color-wrapper {
   width: 35px;
   height: 35px;
   border-radius: 100%;
@@ -57,11 +57,11 @@
   border: 1px solid #dee0ea;
   transition: border-color ease 0.4s;
 }
-.variations-form .variations .colors .color-wrapper:hover,
-.variations-form .variations .colors .color-wrapper.active {
+.site-main .variations-form .variations .colors .color-wrapper:hover,
+.site-main .variations-form .variations .colors .color-wrapper.active {
   border: 1px solid red;
 }
-.variations-form .variations .colors .color-wrapper label {
+.site-main .variations-form .variations .colors .color-wrapper label {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -69,19 +69,19 @@
   cursor: pointer;
   padding: 2px;
 }
-.variations-form .variations .colors .blue-color {
+.site-main .variations-form .variations .colors .blue-color {
   background-color: blue;
 }
-.variations-form .variations .colors .red-color {
+.site-main .variations-form .variations .colors .red-color {
   background-color: red;
 }
-.variations-form .variations .colors .green-color {
+.site-main .variations-form .variations .colors .green-color {
   background-color: green;
 }
-.variations-form .variations .colors .purple-color {
+.site-main .variations-form .variations .colors .purple-color {
   background-color: purple;
 }
-.variations-form .variations .colors input[type="radio"] {
+.site-main .variations-form .variations .colors input[type="radio"] {
   appearance: none;
 }
 
@@ -148,7 +148,6 @@
   flex-direction: column;
   row-gap: 5px;
 }
-
 
 /*! Responsive */
 @media (max-width: 768px) {
