@@ -68,9 +68,9 @@ showSlide(slideIndex);
 // const btnSlideRight = document.querySelector("#btn-slider-rigth");
 // btnSlideRight.addEventListener("click", plusSlide());
 
-setInterval(() => {
-  plusSlide(1);
-}, 5000);
+// setInterval(() => {
+//   plusSlide(1);
+// }, 5000);
 
 function plusSlide(n) {
   showSlide((slideIndex += n));
@@ -104,3 +104,20 @@ function showSlide(index) {
 }
 
 //! Slider end
+
+//! Add Product to local storeage
+
+async function getData() {
+  const response = await fetch("../js/data.json");
+  const products = await response.json();
+  localStorage.setItem("products", JSON.stringify(products));
+}
+
+const productsFormStorage = JSON.parse(localStorage.getItem("products"));
+console.log(productsFormStorage);
+
+getData();
+
+import ABC, { header } from "./header.js";
+header();
+ABC();
