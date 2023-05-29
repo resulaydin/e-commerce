@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
 }
+.slider-item.fade {
+  display: none;
+}
 
 .slider-item .slider-image img {
   position: absolute;
@@ -78,6 +81,9 @@
   opacity: 0.4;
   transition: opacity ease 0.2s;
 }
+.slider .slider-dots .slider-dot.active {
+  opacity: 1;
+}
 .slider .slider-dots .slider-dot:hover {
   border: none;
   display: flex;
@@ -89,14 +95,27 @@
   width: 12px;
   height: 12px;
   border-radius: 100%;
-
 }
 
-@media(max-width:768px){
-    .slider{
-        height: calc(100vh -154px);
-    }
-    .slider-buttons{
-        display: none !important;
-    }
+.fade {
+  animation-name: camon;
+  animation-duration: 1.4s;
+}
+
+@keyframes camon {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: calc(100vh -154px);
+  }
+  .slider-buttons {
+    display: none !important;
+  }
 }
