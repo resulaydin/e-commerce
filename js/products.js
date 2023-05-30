@@ -1,33 +1,54 @@
-import { productGlide, newProductGlide } from "./glide.js";
+import { productGlide, productArrivalGlide } from "./glide.js";
 
-let products = [];
+let carts = localStorage.getItem("carts")
+  ? JSON.parse(localStorage.getItem("carts"))
+  : [];
 
-function productsFunc() {
-  const products = JSON.parse(localStorage.getItem("products"));
-  //   console.log(products);
+function addToCart(products) {
+  const buttons = document.querySelectorAll(".add-to-cart");
+  const cartItems = document.querySelector(".header-cart-count");
+  buttons.forEach((button) => {
+    const id = Number(button.dataset.id);
+    const inCart = carts.find((item) => item.id === id);
+    if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log(id);
+        const findProduct = products.find((item) => item.id === id);
 
-  products.forEach((product) => {
-    const productList = document.getElementById("product-list");
-    const newProductList = document.getElementById("product-list-new");
-    // console.log(product);
-    let result = `             
+        carts.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("carts", JSON.stringify(carts));
+        cartItems.innerHTML = carts.length;
+        button.setAttribute("disabled", "disabled");
+      });
+    }
+  });
+}
+
+function productsArrivalFunc(productArrival) {
+  let result = "";
+  productArrival.forEach((productItem) => {
+    const productArrivalContainer = document.querySelector("#product-list-new");
+    result += `             
 <li class="product-item glide__slide">
     <div class="product-image">
       <a href="">
         <img
           class="image-front"
-          src=${product.img.singleImage}
+          src=${productItem.img.singleImage}
           alt=""
         />
         <img
           class="image-back"
-          src=${product.img.thumbs[1]}
+          src=${productItem.img.thumbs[1]}
           alt=""
         />
       </a>
     </div>
     <div class="product-info">
-      <a href="#" class="product-title">${product.name}</a>
+      <a href="#" class="product-title">${productItem.name}</a>
       <ul class="product-star">
         <li>
           <a href="#">
@@ -51,12 +72,14 @@ function productsFunc() {
         </li>
       </ul>
       <div class="product-price">
-        <strong class="new-price">$${product.price.newPrice.toFixed(2)}</strong>
-        <span class="old-price">$${product.price.oldPrice.toFixed(2)}</span>
+        <strong class="new-price">$${productItem.price.newPrice.toFixed(
+          2
+        )}</strong>
+        <span class="old-price">$${productItem.price.oldPrice.toFixed(2)}</span>
       </div>
-      <span class="product-discount">-${product.discount}%</span>
+      <span class="product-discount">-${productItem.discount}%</span>
       <div class="product-links">
-        <button>
+        <button class="add-to-cart" data-id=${productItem.id}>
           <i class="bi bi-basket-fill"></i>
         </button>
         <button>
@@ -72,12 +95,85 @@ function productsFunc() {
     </div>
   </li>
     `;
-
-    productList.innerHTML += result;
-    newProductList.innerHTML += result;
+    productArrivalContainer ? (productArrivalContainer.innerHTML = result) : "";
   });
-  productGlide();
-  newProductGlide();
+  addToCart(productArrival);
+  productArrivalGlide();
 }
 
-export default productsFunc();
+function productsFunc(products) {
+  let result = "";
+  products.forEach((productItem) => {
+    const productsContainer = document.querySelector("#product-list");
+    result += `             
+<li class="product-item glide__slide">
+    <div class="product-image">
+      <a href="">
+        <img
+          class="image-front"
+          src=${productItem.img.singleImage}
+          alt=""
+        />
+        <img
+          class="image-back"
+          src=${productItem.img.thumbs[1]}
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="product-info">
+      <a href="#" class="product-title">${productItem.name}</a>
+      <ul class="product-star">
+        <li>
+          <a href="#">
+            <i class="bi bi-star-fill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bi bi-star-fill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bi bi-star-fill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="product-price">
+        <strong class="new-price">$${productItem.price.newPrice.toFixed(
+          2
+        )}</strong>
+        <span class="old-price">$${productItem.price.oldPrice.toFixed(2)}</span>
+      </div>
+      <span class="product-discount">-${productItem.discount}%</span>
+      <div class="product-links">
+        <button class="add-to-cart" data-id=${productItem.id}>
+          <i class="bi bi-basket-fill"></i>
+        </button>
+        <button>
+          <i class="bi bi-heart-fill"></i>
+        </button>
+        <a href="product-detail.html">
+          <i class="bi bi-eye-fill"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-share-fill"></i>
+        </a>
+      </div>
+    </div>
+  </li>
+    `;
+    productsContainer ? (productsContainer.innerHTML = result) : "";
+  });
+
+  productGlide();
+  productsArrivalFunc(products);
+}
+
+export default productsFunc;

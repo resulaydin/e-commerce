@@ -17,10 +17,12 @@
   font-family: "Jost", sans-serif;
 }
 
-/* body{
-  overflow-x: hidden;
-} */
-
+/* 
+body {
+  background-color: black;
+  color: white;
+}
+*/
 ul,
 ol {
   margin: 0;
@@ -100,7 +102,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-textarea{
+textarea {
   outline: none;
   border: 1px solid #dee0ea;
   padding: 8px 8px 8px 15px;

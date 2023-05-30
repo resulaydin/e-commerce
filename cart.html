@@ -27,13 +27,13 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
 
             <div class="header-left">
               <a href="index.html" class="logo"> LOGO </a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -196,21 +196,21 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi bi-x-circle"></i>
+              <i class="bi bi-x-circle" id="btn-menu-close"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
-                <a href="account.html" class="header-account">
+                <a href="#" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
-                  <i class="bi bi-search"></i>
+                <button class="search-button" id="search-button">
+                  <i class="bi bi-search" id="btn-modal-search"></i>
                 </button>
                 <a href="#">
                   <i class="bi bi-heart"></i>
                 </a>
                 <div class="header-cart">
-                  <a href="#" class="header-cart-link">
+                  <a href="cart.html" class="header-cart-link">
                     <i class="bi bi-bag"></i>
                     <span class="header-cart-count">0</span>
                   </a>
@@ -222,10 +222,10 @@
       </div>
     </header>
     <!--! header end  -->
-
     <!--! modal search start  -->
-    <div class="modal-search">
-      <div class="modal-wrapper">
+
+    <div class="modal-search" id="modal-search">
+      <div class="modal-wrapper" id="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
         <p class="modal-text">
           Start typing to see products you are looking for.
@@ -306,7 +306,7 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="btn-modal-seach-close"></i>
       </div>
     </div>
 
@@ -337,34 +337,15 @@
                     <th class="product-subtotal">Subtotal</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr class="cart-item">
-                    <td></td>
-                    <td class="cart-image">
-                      <img src="img/products/product1/1.png" alt="" />
-                      <i class="bi bi-x"></i>
-                    </td>
-                    <td>Analogue Resin Strap</td>
-                    <td>$108.00</td>
-                    <td class="product-quantity">1</td>
-                    <td class="product-subtotal" >$108.00</td>
-                  </tr>
-                  <tr class="cart-item">
-                    <td></td>
-                    <td class="cart-image">
-                      <img src="img/products/product2/1.png" alt="" />
-                      <i class="bi bi-x"></i>
-                    </td>
-                    <td>Ridley High Waist</td>
-                    <td>$100.00</td>
-                    <td class="product-quantity">1</td>
-                    <td class="product-subtotal" >$100.00</td>
-                  </tr>
-                </tbody>
+                <tbody class="shop-table-tbody"></tbody>
               </table>
               <div class="action-wrapper">
                 <div class="coupon">
-                  <input type="text" class="input-text" placeholder="Coupon code" />
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Coupon code"
+                  />
                   <button class="btn">Apply Coupon</button>
                 </div>
                 <div class="update-cart">
@@ -595,5 +576,9 @@
     </footer>
 
     <!--! footer end  -->
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/carts.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   </body>
 </html>

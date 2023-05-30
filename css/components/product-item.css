@@ -100,6 +100,11 @@
   visibility: visible;
   transform: translate(10px);
 }
+
+.products .product-links .add-to-cart:disabled {
+  opacity: 0.4;
+}
+
 .product-item .product-links button,
 .product-item .product-links a {
   background-color: black;
@@ -116,6 +121,7 @@
   color: #fff;
   font-size: 14px;
   display: flex;
+  pointer-events: none;
 }
 
 /*! glide slide button  */
