@@ -4,14 +4,26 @@ let carts = localStorage.getItem("carts")
   ? JSON.parse(localStorage.getItem("carts"))
   : [];
 
+let routeId = localStorage.getItem("routeId")
+  ? JSON.parse(localStorage.getItem("routeId"))
+  : 0;
+
+function checkForOtherButtons(buttons, buttonId) {
+  buttons.forEach((item) => {
+    if (Number(item.dataset.id) === buttonId) {
+      item.setAttribute("disabled", "disabled");
+    }
+  });
+}
+
 function addToCart(products) {
   const buttons = document.querySelectorAll(".add-to-cart");
-  const cartItems = document.querySelector(".header-cart-count");
+  const cartCount = document.querySelector(".header-cart-count");
   buttons.forEach((button) => {
     const id = Number(button.dataset.id);
     const inCart = carts.find((item) => item.id === id);
     if (inCart) {
-      button.setAttribute("disabled", "disabled");
+      checkForOtherButtons(buttons, id);
     } else {
       button.addEventListener("click", function (e) {
         e.preventDefault();
@@ -20,10 +32,20 @@ function addToCart(products) {
 
         carts.push({ ...findProduct, quantity: 1 });
         localStorage.setItem("carts", JSON.stringify(carts));
-        cartItems.innerHTML = carts.length;
-        button.setAttribute("disabled", "disabled");
+        cartCount.innerHTML = carts.length;
+        checkForOtherButtons(buttons, id);
       });
     }
+  });
+}
+
+function productRoute() {
+  const cartsRoute = document.querySelectorAll(".route-to-cart");
+  cartsRoute.forEach((route) => {
+    route.addEventListener("click", (e) => {
+      routeId = e.target.dataset.routeId;
+      localStorage.setItem("routeId", JSON.stringify(routeId));
+    });
   });
 }
 
@@ -103,6 +125,7 @@ function productsArrivalFunc(productArrival) {
 
 function productsFunc(products) {
   let result = "";
+  console.log(products);
   products.forEach((productItem) => {
     const productsContainer = document.querySelector("#product-list");
     result += `             
@@ -159,7 +182,9 @@ function productsFunc(products) {
         <button>
           <i class="bi bi-heart-fill"></i>
         </button>
-        <a href="product-detail.html">
+        <a href="product-detail.html" class="route-to-cart" data-route-id=${
+          productItem.id
+        }>
           <i class="bi bi-eye-fill"></i>
         </a>
         <a href="#">
@@ -172,8 +197,17 @@ function productsFunc(products) {
     productsContainer ? (productsContainer.innerHTML = result) : "";
   });
 
-  productGlide();
   productsArrivalFunc(products);
+  productGlide();
+  productRoute();
 }
 
-export default productsFunc;
+function productMain(products) {
+  productsFunc(products);
+  // console.log("after");
+  // productsArrivalFunc(products);
+}
+
+export default productMain;
+
+// export productsFunc;

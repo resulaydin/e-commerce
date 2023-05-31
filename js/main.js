@@ -1,5 +1,5 @@
 import HeaderFunc from "./header.js";
-import ProductFunc from "./products.js";
+import ProductMain from "./products.js";
 // import Carts from "./carts.js";
 //! Add Product to local storeage
 
@@ -9,7 +9,7 @@ import ProductFunc from "./products.js";
   const data = await responseAll.json();
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
-  ProductFunc(data);
+  ProductMain(data);
 })();
 
 const cartItems = document.querySelector(".header-cart-count");
