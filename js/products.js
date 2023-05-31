@@ -8,34 +8,32 @@ let routeId = localStorage.getItem("routeId")
   ? JSON.parse(localStorage.getItem("routeId"))
   : 0;
 
-function checkForOtherButtons(buttons, buttonId) {
-  buttons.forEach((item) => {
-    if (Number(item.dataset.id) === buttonId) {
-      item.setAttribute("disabled", "disabled");
+let buttons = [];
+function checkForCartInButtons() {
+  buttons.forEach((button) => {
+    if (carts.find((item) => item.id === Number(button.dataset.id))) {
+      button.setAttribute("disabled", "disabled");
     }
   });
 }
 
 function addToCart(products) {
-  const buttons = document.querySelectorAll(".add-to-cart");
+  buttons = document.querySelectorAll(".add-to-cart");
+  console.log("buttons.length: " + buttons.length);
   const cartCount = document.querySelector(".header-cart-count");
+  checkForCartInButtons();
   buttons.forEach((button) => {
     const id = Number(button.dataset.id);
-    const inCart = carts.find((item) => item.id === id);
-    if (inCart) {
-      checkForOtherButtons(buttons, id);
-    } else {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        console.log(id);
-        const findProduct = products.find((item) => item.id === id);
 
-        carts.push({ ...findProduct, quantity: 1 });
-        localStorage.setItem("carts", JSON.stringify(carts));
-        cartCount.innerHTML = carts.length;
-        checkForOtherButtons(buttons, id);
-      });
-    }
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(id);
+      const findProduct = products.find((item) => item.id === id);
+      carts.push({ ...findProduct, quantity: 1 });
+      localStorage.setItem("carts", JSON.stringify(carts));
+      cartCount.innerHTML = carts.length;
+      checkForCartInButtons();
+    });
   });
 }
 
@@ -125,7 +123,6 @@ function productsArrivalFunc(productArrival) {
 
 function productsFunc(products) {
   let result = "";
-  console.log(products);
   products.forEach((productItem) => {
     const productsContainer = document.querySelector("#product-list");
     result += `             
@@ -197,15 +194,13 @@ function productsFunc(products) {
     productsContainer ? (productsContainer.innerHTML = result) : "";
   });
 
-  productsArrivalFunc(products);
   productGlide();
   productRoute();
 }
 
 function productMain(products) {
   productsFunc(products);
-  // console.log("after");
-  // productsArrivalFunc(products);
+  productsArrivalFunc(products);
 }
 
 export default productMain;
