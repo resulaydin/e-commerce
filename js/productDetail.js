@@ -4,6 +4,7 @@ import { tabPanelFunc } from "./productDetail/tab.js";
 import zoomFunc from "./productDetail/zoom.js";
 import colorFunc from "./productDetail/color.js";
 import valueFunc from "./productDetail/value.js";
+import commentFunc from "./productDetail/comment.js";
 
 let products = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))

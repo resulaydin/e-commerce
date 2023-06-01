@@ -71,6 +71,7 @@
 .tab-panel .review-form-wrapper .stars .star-item i {
   color: #dee0ea;
   transition: color ease 0.2s;
+  pointer-events: none;
 }
 .tab-panel .review-form-wrapper .console {
   display: flex;
@@ -97,14 +98,13 @@
 /*! Responsive */
 
 @media (max-width: 992px) {
-    
   .tab-panel .review-form-wrapper {
     flex: unset;
     width: 100%;
   }
   .tab-panel .review-form-wrapper .comment-add-form {
     padding: unset !important;
-    border:none;
+    border: none;
     width: 100%;
   }
 }
