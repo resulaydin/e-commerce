@@ -85,17 +85,17 @@
   appearance: none;
 }
 
-.size-values .values-label {
+.size-values .value-label {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.size-values .values-list {
+.size-values .value-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
 }
-.size-values .values-list span {
+.size-values .value-list span {
   display: inline-block;
   padding: 8px 40px;
   border: 1px solid #dee0ea;
@@ -104,12 +104,12 @@
   text-align: center;
   transition: all ease 0.3s;
 }
-.size-values .values-list span:hover {
+.size-values .value-list span:hover {
   background-color: #e51414;
   color: white;
   cursor: pointer;
 }
-.size-values .values-list span.active {
+.size-values .value-list span.active {
   background-color: #e51414;
   color: white;
 }
@@ -151,7 +151,7 @@
 
 /*! Responsive */
 @media (max-width: 768px) {
-  .site-main .values-list span {
+  .site-main .value-list span {
     padding: 6px !important;
     display: inline-block;
   }

@@ -1,7 +1,14 @@
 function colorFunc() {
-  const colorsWrapper = document.querySelectorAll(".colors-wrapper");
+  const colorsWrapperLabel = document.querySelectorAll(
+    ".colors-wrapper .color-wrapper"
+  );
 
-  colorsWrapper.forEach((color) => {});
+  colorsWrapperLabel.forEach((color) => {
+    color.addEventListener("click", function () {
+      colorsWrapperLabel.forEach((item) => item.classList.remove("active"));
+      color.classList.add("active");
+    });
+  });
 }
 
 export default colorFunc();
