@@ -1,6 +1,8 @@
 import { productDetailGlide } from "./glide.js";
 import { thumbActiveFunc } from "./productDetail/thumbActive.js";
 import { tabPanelFunc } from "./productDetail/tab.js";
+import zoomFunc from "./productDetail/zoom.js";
+import colorFunc from "./productDetail/color.js";
 
 let products = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))

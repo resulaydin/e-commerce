@@ -1,8 +1,15 @@
+.product-gallery .single-image-wrapper {
+  display: flex;
+  overflow: hidden;
+}
 .product-gallery .single-image-wrapper img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
 }
 .product-gallery .single-image-wrapper img:hover {
-  cursor: zoom-in;
+  cursor: crosshair;
 }
 
 .product-gallery .gallery-thumb {
