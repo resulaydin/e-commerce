@@ -19,7 +19,6 @@ function checkForCartInButtons() {
 
 function addToCart(products) {
   buttons = document.querySelectorAll(".add-to-cart");
-  console.log("buttons.length: " + buttons.length);
   const cartCount = document.querySelector(".header-cart-count");
   checkForCartInButtons();
   buttons.forEach((button) => {
@@ -30,6 +29,7 @@ function addToCart(products) {
       console.log(id);
       const findProduct = products.find((item) => item.id === id);
       carts.push({ ...findProduct, quantity: 1 });
+      console.log(carts);
       localStorage.setItem("carts", JSON.stringify(carts));
       cartCount.innerHTML = carts.length;
       checkForCartInButtons();
@@ -41,7 +41,7 @@ function productRoute() {
   const cartsRoute = document.querySelectorAll(".route-to-cart");
   cartsRoute.forEach((route) => {
     route.addEventListener("click", (e) => {
-      routeId = e.target.dataset.routeId;
+      routeId = Number(e.target.dataset.routeId);
       localStorage.setItem("routeId", JSON.stringify(routeId));
     });
   });

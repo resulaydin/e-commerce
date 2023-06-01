@@ -16,8 +16,13 @@
 
 /*! tab-panel start*/
 
-.details-bar .tab-panel {
+.tab-panel {
   margin: 20px 0;
+}
+
+.details-bar .tab-panel > div:not(.active) {
+  margin: 20px 0;
+  display: none;
 }
 .tab-panel h3 {
   margin-bottom: 10px;
@@ -37,8 +42,8 @@
   border-collapse: collapse;
   width: 100%;
 }
-.tab-panel .tab-info-table  th,
-.tab-panel .tab-info-table  td {
+.tab-panel .tab-info-table th,
+.tab-panel .tab-info-table td {
   text-align: start;
   padding: 10px 10px;
   border: 1px solid #dee0ea;

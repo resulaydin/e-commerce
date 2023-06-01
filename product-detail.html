@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerce</title>
+    <title>Product Detail</title>
+    <!--! Glidejs Css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
     <!--! Bootstrap Icon CDN -->
     <link
       rel="stylesheet"
@@ -27,13 +32,13 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
 
             <div class="header-left">
               <a href="index.html" class="logo"> LOGO </a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -192,19 +197,19 @@
                     <a href="blog.html" class="menu-link"> Blog </a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="#" class="menu-link"> Contact </a>
+                    <a href="contact.html" class="menu-link"> Contact </a>
                   </li>
                 </ul>
               </nav>
-              <i class="bi bi-x-circle"></i>
+              <i class="bi bi-x-circle" id="btn-menu-close"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
                 <a href="#" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
-                  <i class="bi bi-search"></i>
+                <button class="search-button" id="search-button">
+                  <i class="bi bi-search" id="btn-modal-search"></i>
                 </button>
                 <a href="#">
                   <i class="bi bi-heart"></i>
@@ -212,7 +217,9 @@
                 <div class="header-cart">
                   <a href="cart.html" class="header-cart-link">
                     <i class="bi bi-bag"></i>
-                    <span class="header-cart-count">0</span>
+                    <span class="header-cart-count" id="header-cart-count"
+                      >0</span
+                    >
                   </a>
                 </div>
               </div>
@@ -224,8 +231,8 @@
     <!--! header end  -->
 
     <!--! modal search start  -->
-    <div class="modal-search">
-      <div class="modal-wrapper">
+    <div class="modal-search" id="modal-search">
+      <div class="modal-wrapper" id="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
         <p class="modal-text">
           Start typing to see products you are looking for.
@@ -238,8 +245,8 @@
         </form>
         <div class="search-result">
           <!-- Aşağıdaki div' in yazılmasının nedeni ayrıca arkaplan,padding 
-               işlemlerini yapabilmek olacaktır
-           -->
+            işlemlerini yapabilmek olacaktır
+        -->
           <div class="search-heading">
             <h3>RESULTS FROM PRODUCT</h3>
           </div>
@@ -306,7 +313,7 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="btn-modal-seach-close"></i>
       </div>
     </div>
 
@@ -335,32 +342,29 @@
             <main class="site-main">
               <div class="product-gallery">
                 <div class="single-image-wrapper">
-                  <img src="./img/products/product1/1.png" alt="" />
+                  <img src="" alt="" />
                 </div>
-                <div class="product-thumb">
-                  <ol class="gallery-thumb">
-                    <li>
-                      <img
-                        src="./img/products/product1/1.png"
-                        alt=""
-                        class="img-fluid active"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="./img/products/product1/2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="./img/products/product1/3.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </li>
-                  </ol>
+                <div class="product-thumb glide_3">
+                  <div
+                    class="product-thumb-wrapper glide__track"
+                    data-glide-el="track"
+                  >
+                    <ol class="gallery-thumb glide__slides"></ol>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button
+                      class="glide__arrow glide__arrow--left"
+                      data-glide-dir="<"
+                    >
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button
+                      class="glide__arrow glide__arrow--right"
+                      data-glide-dir=">"
+                    >
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="product-info">
@@ -425,7 +429,12 @@
                       </div>
                     </div>
                     <div class="cart-button">
-                      <input type="number" value="1" min="1" />
+                      <input
+                        type="number"
+                        value="0"
+                        min="1"
+                        id="product-count"
+                      />
                       <button class="btn btn-lg btn-primary">
                         Add to cart
                       </button>
@@ -471,13 +480,13 @@
           <div class="details-bar">
             <ul class="tab-list">
               <li class="tab-item">
-                <a href="#" class="tab-link active">Description</a>
+                <a href="#desc" class="tab-link active">Description</a>
               </li>
               <li class="tab-item">
-                <a href="#desc" class="tab-link">Additional information</a>
+                <a href="#info" class="tab-link">Additional information</a>
               </li>
               <li class="tab-item">
-                <a href="#" class="tab-link">Reviews</a>
+                <a href="#reviews" class="tab-link">Reviews</a>
               </li>
             </ul>
             <div class="tab-panel">
@@ -638,7 +647,7 @@
                       </a>
                     </div>
                     <div class="comment-form-review console">
-                      <label> Your review  <span>*</span></label>
+                      <label> Your review <span>*</span></label>
                       <textarea name="" id="" cols="20" rows="10"></textarea>
                     </div>
                     <div class="comment-form-name console">
@@ -654,8 +663,8 @@
                         <input type="checkbox" /> Remember me
                         <span>*</span>
                       </label>
-                    </div> 
-                    <input type="submit" class="btn btn-sm">
+                    </div>
+                    <input type="submit" class="btn btn-sm" />
                   </form>
                 </div>
               </div>
@@ -869,5 +878,10 @@
     </footer>
 
     <!--! footer end  -->
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/productDetail.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js" type="module"></script>
   </body>
 </html>

@@ -37,17 +37,27 @@ export function productArrivalGlide() {
     bound: true,
     // autoplay: 2000,
     breakpoints: {
-      992: {
-        perView: 3,
-      },
-      768: {
-        perView: 2,
-      },
-      576: {
-        perView: 1,
-      },
+      992: { perView: 3 },
+      768: { perView: 2 },
+      576: { perView: 1 },
     },
   };
 
   productArrivalList && new Glide(".glide_2", config_2).mount();
+}
+
+export function productDetailGlide() {
+  const config_3 = {
+    // type: "carousel",
+    perView: 5,
+    // bound: true,
+    // autoplay: 2000,
+    breakpoints: {
+      992: { perView: 3 },
+      768: { perView: 2 },
+      576: { perView: 1 },
+    },
+  };
+
+  new Glide(".glide_3", config_3).mount();
 }
