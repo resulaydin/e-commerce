@@ -26,10 +26,8 @@ function addToCart(products) {
 
     button.addEventListener("click", function (e) {
       e.preventDefault();
-      console.log(id);
       const findProduct = products.find((item) => item.id === id);
       carts.push({ ...findProduct, quantity: 1 });
-      console.log(carts);
       localStorage.setItem("carts", JSON.stringify(carts));
       cartCount.innerHTML = carts.length;
       checkForCartInButtons();

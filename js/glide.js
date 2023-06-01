@@ -54,8 +54,6 @@ export function productDetailGlide() {
     // autoplay: 2000,
     breakpoints: {
       992: { perView: 3 },
-      768: { perView: 2 },
-      576: { perView: 1 },
     },
   };
 

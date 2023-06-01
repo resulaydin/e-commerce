@@ -9,6 +9,10 @@ let products = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))
   : [];
 
+let carts = localStorage.getItem("carts")
+  ? JSON.parse(localStorage.getItem("carts"))
+  : [];
+
 /* single product */
 const productId = JSON.parse(localStorage.getItem("routeId"));
 const singleProduct = products.find((item) => item.id === productId);
@@ -38,7 +42,7 @@ singleProduct.img.thumbs.forEach((thumbItem) => {
         <img
         src="${thumbItem}"
         alt=""
-        class="img-fluid"
+        class="img-fluid ${!result && "active"}"
         />
     </li>
     `;
@@ -47,3 +51,23 @@ galleryThumb.innerHTML = result;
 productDetailGlide();
 thumbActiveFunc();
 tabPanelFunc();
+
+/* add to cart */
+const btnAddToCart = document.getElementById("btn-add-to-cart");
+const cartCount = document.getElementById("header-cart-count");
+const productCount = document.getElementById("product-count");
+
+const findCart = carts.find((cart) => cart.id === singleProduct.id);
+findCart
+  ? btnAddToCart.setAttribute("disabled", "disabled")
+  : (btnAddToCart.disabled = false);
+
+btnAddToCart.addEventListener("click", function (e) {
+  // e.preventDefault();
+  const cartChangedCount = Number(productCount.value);
+  console.log(cartChangedCount);
+  carts.push({ ...singleProduct, quantity: cartChangedCount });
+  localStorage.setItem("carts", JSON.stringify(carts));
+  !findCart && (cartCount.innerHTML = carts.length);
+  btnAddToCart.setAttribute("disabled", "disabled");
+});

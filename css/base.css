@@ -61,6 +61,10 @@ button {
   cursor: pointer;
   border: none;
 }
+button:disabled {
+  opacity: 0.4 !important;
+  cursor: no-drop;
+}
 
 /*                      ** START **                             */
 /* Bu sınıf button sınıfındna sonra en genel şablon olacaktır.  */

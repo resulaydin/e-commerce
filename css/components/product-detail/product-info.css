@@ -125,6 +125,11 @@
 .cart-button button {
   width: 100%;
 }
+.cart-button button:disabled {
+  background-color: #1367ef;
+  color: white;
+  border-color: #1367ef;
+}
 
 .product-extra-buttons {
   display: flex;

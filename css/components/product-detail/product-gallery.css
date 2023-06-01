@@ -12,6 +12,11 @@
   cursor: crosshair;
 }
 
+.product-thumb {
+  position: relative;
+  margin-top: 8px;
+}
+
 .product-gallery .gallery-thumb {
   display: flex;
   /* column-gap: 10px; */
@@ -34,10 +39,6 @@
 /* Bu alan border olduğunda içeri göçmemesi için end*/
 
 /* glide yapısının şekillendirilmesi oklar start */
-
-.product-thumb {
-  position: relative;
-}
 
 .product-thumb .glide__arrow {
   background-color: transparent;
