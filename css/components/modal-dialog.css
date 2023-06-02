@@ -8,10 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease all;
+  visibility: hidden;
+  opacity: 0;
 }
 .modal-dialog::after {
   content: "";
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -28,9 +31,6 @@
   background-color: white;
   max-width: 800px;
   width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
   z-index: 10;
 }
 .modal-dialog-wrapper .modal-close {
@@ -42,9 +42,6 @@
 }
 .modal-dialog-wrapper .modal-dialog-image img {
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .modal-dialog-wrapper .modal-dailog-optional {
@@ -84,47 +81,32 @@
 
 @media (max-width: 992px) {
   .modal-dialog .modal-dialog-wrapper {
-    max-width: 450px;
-    height: 80%;
+    max-width: 550px;
+    padding: 40px 0;
   }
   .modal-dialog .modal-dialog-wrapper .modal-close {
     color: black;
     right: 0;
     top: -10px;
   }
+  .modal-dialog .modal-dialog-image img {
+    display: none;
+  }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .modal-dialog .modal-dialog-wrapper {
-    max-width: 600px;
-    transform: translateX(-50%) translateY(-50%);
+    max-width: 500px;
+    height: 300px;
   }
-
-  .modal-dialog-wrapper .modal-dailog-optional {
-    height: 40%;
-    gap: 3px;
-    transform: translateX(0%) translateY(-45%);
-  }
-  .modal-dialog-wrapper .modal-dailog-optional .optional-content {
-    margin-bottom: 3px;
+  .modal-dialog .modal-dialog-wrapper .modal-dailog-optional {
+    margin: 30px;
   }
 }
 @media (max-width: 576px) {
   .modal-dialog .modal-dialog-wrapper {
-    max-width: 300px;
+    max-width: 350px;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    transform: translateX(-50%) translateY(-45%);
-  }
-  .modal-dialog .modal-dialog-wrapper .modal-dialog-image {
-    display: flex;
-    height: 45%;
-    width: 100%;
-  }
-  .modal-dialog .modal-dialog-wrapper .modal-dialog-image img {
-    object-fit: contain;
-  }
-  .modal-dialog-wrapper .modal-dailog-optional {
-    gap: 3px;
-    transform: translateX(0%) translateY(0%);
   }
 }

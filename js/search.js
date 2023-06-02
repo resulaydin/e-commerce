@@ -25,15 +25,13 @@ const searchProductsShowFunc = (productList) => {
         ? (searchProductsDOM.style.gridTemplateColumns = "1fr")
         : (searchProductsDOM.style.gridTemplateColumns = "1fr 1fr")
       : (result = `
-      <a href="#" class="result-item" style="justify-content: center">
-      😔Aradığınız Ürün Bulunamadı😔
-      </a>
-      `);
+        <a href="#" class="result-item" style="justify-content: center">
+        😔Aradığınız Ürün Bulunamadı😔
+        </a>
+        `);
     productList.length < 1 &&
       (searchProductsDOM.style.gridTemplateColumns = "1fr");
   }
-
-  console.log(result);
 
   productList.forEach((item) => {
     result += `
@@ -62,5 +60,4 @@ const searchRoute = function () {
     });
   });
 };
-
 export default searchFunc;
