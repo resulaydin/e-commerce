@@ -48,13 +48,13 @@
 } */
 @media (max-width: 768px) {
   .blogs .blogs-wrapper .blog-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
     display: none;
   }
 }
 @media (max-width: 576px) {
   .blogs .blogs-wrapper .blog-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     display: none;
   }
 }

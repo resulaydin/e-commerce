@@ -12,6 +12,7 @@ const searchFunc = () => {
     );
     searchProductsShowFunc(filteredProducts);
   });
+  searchRoute();
 };
 
 const searchProductsShowFunc = (productList) => {
@@ -36,7 +37,7 @@ const searchProductsShowFunc = (productList) => {
 
   productList.forEach((item) => {
     result += `
-      <a href="#" class="result-item">
+        <a href="#" class="result-item" data-id ="${item.id}">
                 <img src="${item.img.singleImage}" class="search-thumb" alt="">
                 <div class="search-info">
                   <h4>${item.name}</h4>
@@ -45,10 +46,21 @@ const searchProductsShowFunc = (productList) => {
                     2
                   )}</span>
                 </div>
-              </a>
+        </a>
       `;
   });
   searchProductsDOM.innerHTML = result;
+};
+
+const searchRoute = function () {
+  const searchResultItemsDOM = document.querySelectorAll(".result-item");
+  searchResultItemsDOM.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const productId = parseInt(item.dataset.id);
+      localStorage.setItem("routeId", JSON.stringify(productId));
+      window.location.href = "product-detail.html";
+    });
+  });
 };
 
 export default searchFunc;

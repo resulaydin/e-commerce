@@ -153,7 +153,7 @@
     overflow: auto;
   }
   .modal-search .results {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     overflow: auto;
   }
 }
