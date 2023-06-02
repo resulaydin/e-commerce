@@ -238,7 +238,12 @@
           Start typing to see products you are looking for.
         </p>
         <form action="" class="search-form">
-          <input type="text" placeholder="Search a product" />
+          <input
+            type="text"
+            id="search-input"
+            value="-"
+            placeholder="Search a product"
+          />
           <button>
             <i class="bi bi-search"></i>
           </button>
@@ -250,68 +255,7 @@
           <div class="search-heading">
             <h3>RESULTS FROM PRODUCT</h3>
           </div>
-          <div class="results">
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product1/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Analogue Resin Strap</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$108.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product2/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Ridley High Waist</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$100.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product3/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Blush Beanie</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$38.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product4/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Mercury Tee</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$48.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product5/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>La Boheme Rose Gold</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$48.00</span>
-              </div>
-            </a>
-          </div>
+          <div class="results"></div>
         </div>
         <i class="bi bi-x-circle" id="btn-modal-seach-close"></i>
       </div>

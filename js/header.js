@@ -1,3 +1,4 @@
+import SearchFunc from "./search.js";
 function sidebarFunc() {
   //! home sidebar start
 
@@ -39,6 +40,7 @@ function searchModalFunc() {
   //! open modal search
   const btnOpenModalSearch = document.getElementById("search-button"); // AAA1
   const btnCloseModalSearch = document.querySelector("#btn-modal-seach-close");
+  const searchInputDOM = document.querySelector("#search-input");
 
   const modalSearch = document.getElementsByClassName("modal-search"); // CCC
   const modalWrapper = document.querySelector("#modal-wrapper");
@@ -46,6 +48,8 @@ function searchModalFunc() {
   btnOpenModalSearch.addEventListener("click", function () {
     modalSearch[0].style.visibility = "visible"; // CCC
     modalSearch[0].style.opacity = "1";
+    searchInputDOM.value = "";
+    SearchFunc();
   });
 
   btnCloseModalSearch.addEventListener("click", function () {

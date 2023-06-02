@@ -1,5 +1,6 @@
 import HeaderFunc from "./header.js";
 import ProductMain from "./products.js";
+import SearchFunc from "./search.js";
 // import Carts from "./carts.js";
 //! Add Product to local storeage
 
