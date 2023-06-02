@@ -1,7 +1,8 @@
 import HeaderFunc from "./header.js";
 import ProductMain from "./products.js";
 import SearchFunc from "./search.js";
-// import Carts from "./carts.js";
+import modalDialog from "./modal-dialog.js";
+
 //! Add Product to local storeage
 
 (async function () {

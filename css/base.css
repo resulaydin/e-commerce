@@ -17,12 +17,10 @@
   font-family: "Jost", sans-serif;
 }
 
-/* 
 body {
-  background-color: black;
-  color: white;
+  position: relative;
 }
-*/
+
 ul,
 ol {
   margin: 0;

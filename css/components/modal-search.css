@@ -29,6 +29,7 @@
   padding: 30px;
   position: fixed;
   z-index: 10;
+  resize: both;
 
   background-color: #fff;
 }
@@ -153,7 +154,7 @@
     overflow: auto;
   }
   .modal-search .results {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     overflow: auto;
   }
 }

@@ -12,6 +12,8 @@ const searchFunc = () => {
     );
     searchProductsShowFunc(filteredProducts);
   });
+
+  searchRoute();
 };
 
 const searchProductsShowFunc = (productList) => {
@@ -24,19 +26,17 @@ const searchProductsShowFunc = (productList) => {
         ? (searchProductsDOM.style.gridTemplateColumns = "1fr")
         : (searchProductsDOM.style.gridTemplateColumns = "1fr 1fr")
       : (result = `
-      <a href="#" class="result-item" style="justify-content: center">
-      😔Aradığınız Ürün Bulunamadı😔
-      </a>
-      `);
+        <a href="#" class="result-item" style="justify-content: center">
+        😔Aradığınız Ürün Bulunamadı😔
+        </a>
+        `);
     productList.length < 1 &&
       (searchProductsDOM.style.gridTemplateColumns = "1fr");
   }
 
-  console.log(result);
-
   productList.forEach((item) => {
     result += `
-      <a href="#" class="result-item">
+      <a href="#" class="result-item" data-id ="${item.id}">
                 <img src="${item.img.singleImage}" class="search-thumb" alt="">
                 <div class="search-info">
                   <h4>${item.name}</h4>
@@ -51,4 +51,14 @@ const searchProductsShowFunc = (productList) => {
   searchProductsDOM.innerHTML = result;
 };
 
+const searchRoute = function () {
+  const searchResultItemsDOM = document.querySelectorAll(".result-item");
+  searchResultItemsDOM.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const productId = parseInt(item.dataset.id);
+      localStorage.setItem("routeId", JSON.stringify(productId));
+      window.location.href = "product-detail.html";
+    });
+  });
+};
 export default searchFunc;
