@@ -2,12 +2,12 @@
 
 let slideIndex = 1;
 showSlide(slideIndex);
-// const btnSlideRight = document.querySelector("#btn-slider-rigth");
+const btnSlideRight = document.querySelector("#btn-slider-rigth");
 // btnSlideRight.addEventListener("click", plusSlide());
 
-// setInterval(() => {
-//   plusSlide(1);
-// }, 5000);
+setInterval(() => {
+  plusSlide(1);
+}, 3000);
 
 function plusSlide(n) {
   showSlide((slideIndex += n));

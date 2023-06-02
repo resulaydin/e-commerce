@@ -87,6 +87,12 @@
 .footer .widgets-row .widget-nav-menu {
   flex: 1;
 }
+.footer .widgets-row .widget-row-wrapper a {
+  transition: 0.2s ease all;
+}
+.footer .widgets-row .widget-row-wrapper a:hover {
+  opacity: 0.5;
+}
 
 .footer .widgets-row .brand-info .widget-desc {
   margin: 15px 0;
@@ -112,37 +118,34 @@
 
 /*! widget end */
 
-
 /*! copyright start */
 
-.footer .copyright-row{
-    padding:40px 0;
+.footer .copyright-row {
+  padding: 40px 0;
 }
-.footer .copyright-row-wrapper{
-    display: flex;
+.footer .copyright-row-wrapper {
+  display: flex;
 }
-.footer .copyright-row-wrapper>p{
-    font-size: 12px;
-    margin-right: 10px;
+.footer .copyright-row-wrapper > p {
+  font-size: 12px;
+  margin-right: 10px;
 }
-.footer .copyright-row-wrapper .footer-menu{
-    margin-left: auto;
-    margin-right: 10px;
+.footer .copyright-row-wrapper .footer-menu {
+  margin-left: auto;
+  margin-right: 10px;
 }
-.footer .copyright-row-wrapper .footer-menu ul{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    column-gap: 10px;
+.footer .copyright-row-wrapper .footer-menu ul {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  column-gap: 10px;
 }
-.footer .copyright-row-wrapper .menu-list .list-item:not(:last-child){
-    padding-right: 10px;
-    border-right: 1px solid #dee0ea;
+.footer .copyright-row-wrapper .menu-list .list-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid #dee0ea;
 }
-
 
 /*! copyright end */
-
 
 /*!Responsive Footer - Subscribe  start */
 
@@ -179,14 +182,14 @@
 
 /*!Responsive Footer - Copyright  start */
 @media (max-width: 768px) {
-    .footer .copyright-row-wrapper {
-        flex-direction: column;
-        text-align: center;
-        row-gap: 10px;
-    }
-    .footer .copyright-row-wrapper .footer-menu {
-        margin-right: auto; 
-        /* margin-right:unset olabilir */
-    }
+  .footer .copyright-row-wrapper {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
   }
+  .footer .copyright-row-wrapper .footer-menu {
+    margin-right: auto;
+    /* margin-right:unset olabilir */
+  }
+}
 /*!Responsive Footer - Copyright  end */

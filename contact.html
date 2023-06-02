@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce</title>
+    <!--! Glidejs Css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
     <!--! Bootstrap Icon CDN -->
     <link
       rel="stylesheet"
@@ -27,17 +32,17 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
 
             <div class="header-left">
               <a href="index.html" class="logo"> LOGO </a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <a href="index.html"  class="menu-link">
+                    <a href="index.html" class="menu-link active">
                       Home <i class="bi bi-chevron-down"></i
                     ></a>
                     <div class="menu-dropdown-wrapper">
@@ -192,19 +197,19 @@
                     <a href="blog.html" class="menu-link"> Blog </a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="#" class="menu-link active"> Contact </a>
+                    <a href="contact.html" class="menu-link"> Contact </a>
                   </li>
                 </ul>
               </nav>
-              <i class="bi bi-x-circle"></i>
+              <i class="bi bi-x-circle" id="btn-menu-close"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
                 <a href="#" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
-                  <i class="bi bi-search"></i>
+                <button class="search-button" id="search-button">
+                  <i class="bi bi-search" id="btn-modal-search"></i>
                 </button>
                 <a href="#">
                   <i class="bi bi-heart"></i>
@@ -212,7 +217,9 @@
                 <div class="header-cart">
                   <a href="cart.html" class="header-cart-link">
                     <i class="bi bi-bag"></i>
-                    <span class="header-cart-count">0</span>
+                    <span class="header-cart-count" id="header-cart-count"
+                      >0</span
+                    >
                   </a>
                 </div>
               </div>
@@ -224,14 +231,19 @@
     <!--! header end  -->
 
     <!--! modal search start  -->
-    <div class="modal-search">
-      <div class="modal-wrapper">
+    <div class="modal-search" id="modal-search">
+      <div class="modal-wrapper" id="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
         <p class="modal-text">
           Start typing to see products you are looking for.
         </p>
         <form action="" class="search-form">
-          <input type="text" placeholder="Search a product" />
+          <input
+            type="text"
+            id="search-input"
+            value="-"
+            placeholder="Search a product"
+          />
           <button>
             <i class="bi bi-search"></i>
           </button>
@@ -243,73 +255,42 @@
           <div class="search-heading">
             <h3>RESULTS FROM PRODUCT</h3>
           </div>
-          <div class="results">
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product1/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Analogue Resin Strap</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$108.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product2/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Ridley High Waist</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$100.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product3/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Blush Beanie</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$38.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product4/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>Mercury Tee</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$48.00</span>
-              </div>
-            </a>
-            <a href="#" class="result-item">
-              <img
-                src="img/products/product5/1.png"
-                class="search-thumb"
-                alt=""
-              />
-              <div class="search-info">
-                <h4>La Boheme Rose Gold</h4>
-                <span class="search-sku">SKU: PD0016</span>
-                <span class="search-price">$48.00</span>
-              </div>
-            </a>
-          </div>
+          <div class="results"></div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="btn-modal-seach-close"></i>
       </div>
     </div>
 
+    <!--! modal search  end  -->
+
+    <!--! modal dialog  start  -->
+    <div class="modal-dialog">
+      <div class="modal-dialog-wrapper">
+        <button class="modal-close">
+          <i class="bi bi-x"></i>
+        </button>
+        <div class="modal-dialog-image">
+          <img src="img/modal-dialog.jpg" alt="" />
+        </div>
+        <div class="modal-dailog-optional">
+          <h2>NEWS LETTER</h2>
+          <div class="optional-content">
+            Sign up to our newsletter and get exclusive deals you won find any
+            where else straight to your inbox!
+          </div>
+          <form action="" class="optional-form">
+            <input type="email" placeholder="Enter Email Address Here" />
+            <button class="btn btn-primary subscribe">SUBSCRIBE</button>
+            <div class="form-check">
+              <label for="dont-show" class="label-dont-show">
+                <input type="checkbox" id="dont-show" />
+                <span>Don't show this popup again </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!--! modal search  end  -->
 
     <!--! contact start  -->
@@ -326,12 +307,10 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          
         </div>
         <div class="contact-bottom">
           <div class="container">
             <div class="contact-info-wrapper">
-
               <div class="contact-get-in-touch">
                 <h4 class="contact-address-title">Contact with us</h4>
                 <p class="contact-address-sub-title">Get In Touch</p>
@@ -555,11 +534,11 @@
             <div class="widget-nav-menu">
               <h4>Categories</h4>
               <ul>
-                <li><a href="#"></a>Women</li>
-                <li><a href="#"></a>Men</li>
-                <li><a href="#"></a>Bags</li>
-                <li><a href="#"></a>Outerwear</li>
-                <li><a href="#"></a>Shoes</li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Outerwear</a></li>
+                <li><a href="#">Shoes</a></li>
               </ul>
             </div>
           </div>
@@ -592,6 +571,12 @@
         </div>
       </div>
     </footer>
+
+    <!--! Javascript codes start  -->
+
+    <script src="js/main.js" type="module"></script>
+
+    <!--! Javascrip codes end  -->
 
     <!--! footer end  -->
   </body>
