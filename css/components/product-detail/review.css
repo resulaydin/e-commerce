@@ -85,7 +85,7 @@
   display: flex;
   column-gap: 5px;
 }
-.tab-panel .review-form-wrapper #btn-submit {
+.tab-panel .review-form-wrapper input[type="submit"] {
   color: white;
   background-color: black;
   cursor: pointer;
