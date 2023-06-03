@@ -119,6 +119,7 @@ function productsArrivalFunc(productArrival) {
   });
   addToCart(productArrival);
   productArrivalGlide();
+  productRoute();
 }
 
 function productsFunc(products) {
