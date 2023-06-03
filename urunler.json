@@ -1,0 +1,1655 @@
+ {
+      "id": 522,
+      "name": "Giyim",
+      "parentId": null,
+      "subCategories": [
+        {
+          "id": 543,
+          "name": "Abiye & Mezuniyet Elbisesi",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 548,
+          "name": "Gelinlik",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 549,
+          "name": "İç Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 550,
+              "name": "Çorap",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 552,
+              "name": "Babydoll",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 555,
+              "name": "Kombinezon",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 558,
+              "name": "Jartiyer",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 560,
+              "name": "Korse",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 567,
+              "name": "Sütyen",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 570,
+              "name": "Boxer",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 571,
+              "name": "Slip",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 574,
+              "name": "String",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 575,
+              "name": "İç Giyim Aksesuarları",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 603,
+              "name": "Atlet",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 1016,
+              "name": "Külot",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 1027,
+              "name": "Spor Sütyeni",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 1041,
+              "name": "Termal Giyim & İçlik",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 2142,
+              "name": "Fanila",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 2144,
+              "name": "İç çamaşırı takımları",
+              "parentId": 549,
+              "subCategories": []
+            },
+            {
+              "id": 4596,
+              "name": "Diyabetik Çorap",
+              "parentId": 549,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 576,
+          "name": "Plaj Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 578,
+              "name": "Bikini Altı",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 579,
+              "name": "Bikini Takımı",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 580,
+              "name": "Bikini Üstü",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 581,
+              "name": "Deniz Şortu",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 583,
+              "name": "Mayo",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 944,
+              "name": "Pareo",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 945,
+              "name": "Tankini",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 1018,
+              "name": "Plaj Elbisesi",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 1044,
+              "name": "Bone & Deniz Gözlüğü",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 2158,
+              "name": "Mayokini",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 2159,
+              "name": "Slip Mayo",
+              "parentId": 576,
+              "subCategories": []
+            },
+            {
+              "id": 2243,
+              "name": "Plaj Havlusu",
+              "parentId": 576,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 584,
+          "name": "Takımlar",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 2160,
+              "name": "Alt-Üst Takım",
+              "parentId": 584,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 588,
+          "name": "Takım Elbise",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 607,
+          "name": "Kimono&Kaftan",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 1179,
+          "name": "Bebek Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 936,
+              "name": "Bebek Body & Zıbın",
+              "parentId": 1179,
+              "subCategories": []
+            },
+            {
+              "id": 947,
+              "name": "Bebek Takımları",
+              "parentId": 1179,
+              "subCategories": []
+            },
+            {
+              "id": 948,
+              "name": "Hastane Çıkışları",
+              "parentId": 1179,
+              "subCategories": []
+            },
+            {
+              "id": 2866,
+              "name": "Bebek Tulumu",
+              "parentId": 1179,
+              "subCategories": [
+                {
+                  "id": 942,
+                  "name": "Astronot Tulum",
+                  "parentId": 2866,
+                  "subCategories": []
+                },
+                {
+                  "id": 1035,
+                  "name": "Uyku Tulumu",
+                  "parentId": 2866,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 4979,
+              "name": "Müslin Bez",
+              "parentId": 1179,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 1182,
+          "name": "Elbise",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 1189,
+          "name": "Kostüm",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 1192,
+          "name": "Salopet & Tulum",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 545,
+              "name": "Salopet",
+              "parentId": 1192,
+              "subCategories": []
+            },
+            {
+              "id": 546,
+              "name": "Tulum",
+              "parentId": 1192,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 2269,
+          "name": "Hamile Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 2270,
+              "name": "Hamile Gömlek",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2271,
+              "name": "Hamile Pançosu",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2272,
+              "name": "Hamile Bluz & Tunik",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2294,
+                  "name": "Hamile Bluz",
+                  "parentId": 2272,
+                  "subCategories": []
+                },
+                {
+                  "id": 2295,
+                  "name": "Hamile Tunik",
+                  "parentId": 2272,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2273,
+              "name": "Hamile Taytı",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2274,
+              "name": "Hamile Kazak & Hırka",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2309,
+                  "name": "Hamile Hırkası",
+                  "parentId": 2274,
+                  "subCategories": []
+                },
+                {
+                  "id": 2310,
+                  "name": "Hamile Kazağı",
+                  "parentId": 2274,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2275,
+              "name": "Hamile Gecelik",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2276,
+              "name": "Hamile Pantolonu",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2277,
+              "name": "Hamile Body",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2278,
+              "name": "Hamile Salopet & Tulum",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2318,
+                  "name": "Hamile Salopeti",
+                  "parentId": 2278,
+                  "subCategories": []
+                },
+                {
+                  "id": 2319,
+                  "name": "Hamile Tulumu",
+                  "parentId": 2278,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2279,
+              "name": "Hamile Kaban & Mont",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2306,
+                  "name": "Hamile Kabanı",
+                  "parentId": 2279,
+                  "subCategories": []
+                },
+                {
+                  "id": 2307,
+                  "name": "Hamile Montu",
+                  "parentId": 2279,
+                  "subCategories": []
+                },
+                {
+                  "id": 2308,
+                  "name": "Hamile Paltosu",
+                  "parentId": 2279,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2280,
+              "name": "Hamile Çorabı",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2281,
+              "name": "Hamile T-Shirt",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2282,
+              "name": "Hamile Ceket & Yelek",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2296,
+                  "name": "Hamile Ceket",
+                  "parentId": 2282,
+                  "subCategories": []
+                },
+                {
+                  "id": 2297,
+                  "name": "Hamile Yelek",
+                  "parentId": 2282,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2283,
+              "name": "Hamile Plaj Giyim",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2314,
+                  "name": "Hamile Bikini Altı",
+                  "parentId": 2283,
+                  "subCategories": []
+                },
+                {
+                  "id": 2315,
+                  "name": "Hamile Bikini Takımı",
+                  "parentId": 2283,
+                  "subCategories": []
+                },
+                {
+                  "id": 2316,
+                  "name": "Hamile Bikini Üstü",
+                  "parentId": 2283,
+                  "subCategories": []
+                },
+                {
+                  "id": 2317,
+                  "name": "Hamile Mayosu",
+                  "parentId": 2283,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2284,
+              "name": "Hamile Eşofman",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2298,
+                  "name": "Hamile Eşofman Altı",
+                  "parentId": 2284,
+                  "subCategories": []
+                },
+                {
+                  "id": 2299,
+                  "name": "Hamile Eşofman Takımı",
+                  "parentId": 2284,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2285,
+              "name": "Hamile Şort&Bermuda",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2286,
+              "name": "Hamile Etek",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2287,
+              "name": "Lohusa Seti",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2288,
+              "name": "Hamile Elbisesi",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2289,
+              "name": "Hamile İç Giyim",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2300,
+                  "name": "Hamile Atleti",
+                  "parentId": 2289,
+                  "subCategories": []
+                },
+                {
+                  "id": 2301,
+                  "name": "Hamile Korsesi & Bel Bandı",
+                  "parentId": 2289,
+                  "subCategories": []
+                },
+                {
+                  "id": 2302,
+                  "name": "Hamile Külodu",
+                  "parentId": 2289,
+                  "subCategories": []
+                },
+                {
+                  "id": 2303,
+                  "name": "Hamile Sütyeni",
+                  "parentId": 2289,
+                  "subCategories": []
+                },
+                {
+                  "id": 2304,
+                  "name": "Emzirme Atleti",
+                  "parentId": 2289,
+                  "subCategories": []
+                },
+                {
+                  "id": 2305,
+                  "name": "Emzirme Sütyeni",
+                  "parentId": 2289,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2290,
+              "name": "Hamile Alt-Üst Takım",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2291,
+              "name": "Hamile Abiye",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 2292,
+              "name": "Hamile Pijama",
+              "parentId": 2269,
+              "subCategories": [
+                {
+                  "id": 2311,
+                  "name": "Hamile Pijama Altı",
+                  "parentId": 2292,
+                  "subCategories": []
+                },
+                {
+                  "id": 2312,
+                  "name": "Hamile Pijama Takımı",
+                  "parentId": 2292,
+                  "subCategories": []
+                },
+                {
+                  "id": 2313,
+                  "name": "Hamile Pijama Üstü",
+                  "parentId": 2292,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2293,
+              "name": "Hamile Sweatshirt",
+              "parentId": 2269,
+              "subCategories": []
+            },
+            {
+              "id": 3242,
+              "name": "Hamile Sabahlık",
+              "parentId": 2269,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 2332,
+          "name": "Mezuniyet Elbisesi",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 2729,
+          "name": "Tesettür Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 391,
+              "name": "Eşarp",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 721,
+              "name": "Kap & Ferace",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2730,
+              "name": "Tesettür Ceket & Yelek",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2754,
+                  "name": "Tesettür Yelek",
+                  "parentId": 2730,
+                  "subCategories": []
+                },
+                {
+                  "id": 2773,
+                  "name": "Tesettür Ceket",
+                  "parentId": 2730,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2731,
+              "name": "Tesettür Elbise",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2732,
+              "name": "Tesettür Panço",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2733,
+              "name": "Tesettür Bluz & Tunik",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2768,
+                  "name": "Tesettür Tunik",
+                  "parentId": 2733,
+                  "subCategories": []
+                },
+                {
+                  "id": 2770,
+                  "name": "Tesettür Bluz",
+                  "parentId": 2733,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2734,
+              "name": "Tesettür Kimono & Kaftan",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2735,
+              "name": "Tesettür Kazak & Hırka",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2759,
+                  "name": "Tesettür Süveter",
+                  "parentId": 2735,
+                  "subCategories": []
+                },
+                {
+                  "id": 2765,
+                  "name": "Tesettür Kazak",
+                  "parentId": 2735,
+                  "subCategories": []
+                },
+                {
+                  "id": 2772,
+                  "name": "Tesettür Hırka",
+                  "parentId": 2735,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2736,
+              "name": "Tesettür Etek",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2737,
+              "name": "Tesettür Sweatshirt",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2738,
+              "name": "Tesettür Tayt",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2739,
+              "name": "Tesettür Abiye",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2740,
+              "name": "Tesettür T-Shirt",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2741,
+              "name": "Tesettür Eşofman",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2769,
+                  "name": "Tesettür Eşofman Takımı",
+                  "parentId": 2741,
+                  "subCategories": []
+                },
+                {
+                  "id": 2776,
+                  "name": "Tesettür Eşofman Altı",
+                  "parentId": 2741,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2742,
+              "name": "Tesettür Salopet & Tulum",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2758,
+                  "name": "Tesettür Salopet",
+                  "parentId": 2742,
+                  "subCategories": []
+                },
+                {
+                  "id": 2767,
+                  "name": "Tesettür Tulum",
+                  "parentId": 2742,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2743,
+              "name": "Tesettür Yağmurluk&Rüzgarlık",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2744,
+              "name": "Tesettür Takımlar",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2752,
+                  "name": "Tesettür Alt-Üst Takım",
+                  "parentId": 2744,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2745,
+              "name": "Tesettür Plaj Giyim",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 582,
+                  "name": "Haşema",
+                  "parentId": 2745,
+                  "subCategories": []
+                },
+                {
+                  "id": 2760,
+                  "name": "Tesettür Mayo",
+                  "parentId": 2745,
+                  "subCategories": []
+                },
+                {
+                  "id": 2762,
+                  "name": "Tesettür Bone",
+                  "parentId": 2745,
+                  "subCategories": []
+                },
+                {
+                  "id": 2775,
+                  "name": "Tesettür Pareo",
+                  "parentId": 2745,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2746,
+              "name": "Tesettür Gömlek",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2747,
+              "name": "Tesettür Kaban & Mont",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2756,
+                  "name": "Tesettür Mont",
+                  "parentId": 2747,
+                  "subCategories": []
+                },
+                {
+                  "id": 2757,
+                  "name": "Tesettür Parka",
+                  "parentId": 2747,
+                  "subCategories": []
+                },
+                {
+                  "id": 2763,
+                  "name": "Tesettür Palto",
+                  "parentId": 2747,
+                  "subCategories": []
+                },
+                {
+                  "id": 2774,
+                  "name": "Tesettür Kaban",
+                  "parentId": 2747,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2748,
+              "name": "Tesettür Pantolon",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2749,
+              "name": "Tesettür Body",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2750,
+              "name": "Tesettür Mezuniyet Elbisesi",
+              "parentId": 2729,
+              "subCategories": []
+            },
+            {
+              "id": 2751,
+              "name": "Tesettür Pardesü & Trençkot",
+              "parentId": 2729,
+              "subCategories": [
+                {
+                  "id": 2753,
+                  "name": "Tesettür Pardesü",
+                  "parentId": 2751,
+                  "subCategories": []
+                },
+                {
+                  "id": 2766,
+                  "name": "Tesettür Trençkot",
+                  "parentId": 2751,
+                  "subCategories": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2867,
+          "name": "Dış Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 537,
+              "name": "Panço",
+              "parentId": 2867,
+              "subCategories": []
+            },
+            {
+              "id": 541,
+              "name": "Yağmurluk&Rüzgarlık",
+              "parentId": 2867,
+              "subCategories": []
+            },
+            {
+              "id": 1181,
+              "name": "Ceket & Yelek",
+              "parentId": 2867,
+              "subCategories": [
+                {
+                  "id": 594,
+                  "name": "Ceket",
+                  "parentId": 1181,
+                  "subCategories": []
+                },
+                {
+                  "id": 606,
+                  "name": "Yelek",
+                  "parentId": 1181,
+                  "subCategories": []
+                },
+                {
+                  "id": 5320,
+                  "name": "Blazer Ceket",
+                  "parentId": 1181,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 1187,
+              "name": "Kaban & Mont",
+              "parentId": 2867,
+              "subCategories": [
+                {
+                  "id": 534,
+                  "name": "Kaban",
+                  "parentId": 1187,
+                  "subCategories": []
+                },
+                {
+                  "id": 535,
+                  "name": "Mont",
+                  "parentId": 1187,
+                  "subCategories": []
+                },
+                {
+                  "id": 536,
+                  "name": "Palto",
+                  "parentId": 1187,
+                  "subCategories": []
+                },
+                {
+                  "id": 539,
+                  "name": "Parka",
+                  "parentId": 1187,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 1190,
+              "name": "Pardesü & Trençkot",
+              "parentId": 2867,
+              "subCategories": [
+                {
+                  "id": 538,
+                  "name": "Pardesü",
+                  "parentId": 1190,
+                  "subCategories": []
+                },
+                {
+                  "id": 540,
+                  "name": "Trençkot",
+                  "parentId": 1190,
+                  "subCategories": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2869,
+          "name": "Alt Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 526,
+              "name": "Etek",
+              "parentId": 2869,
+              "subCategories": []
+            },
+            {
+              "id": 529,
+              "name": "Pantolon",
+              "parentId": 2869,
+              "subCategories": []
+            },
+            {
+              "id": 530,
+              "name": "Şort & Bermuda",
+              "parentId": 2869,
+              "subCategories": []
+            },
+            {
+              "id": 531,
+              "name": "Tayt",
+              "parentId": 2869,
+              "subCategories": []
+            },
+            {
+              "id": 1183,
+              "name": "Eşofman",
+              "parentId": 2869,
+              "subCategories": [
+                {
+                  "id": 525,
+                  "name": "Eşofman Altı",
+                  "parentId": 1183,
+                  "subCategories": []
+                },
+                {
+                  "id": 586,
+                  "name": "Eşofman Takımı",
+                  "parentId": 1183,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 1186,
+              "name": "Jeans",
+              "parentId": 2869,
+              "subCategories": []
+            },
+            {
+              "id": 3902,
+              "name": "Kumaş Pantolon",
+              "parentId": 2869,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 2870,
+          "name": "Ev Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 553,
+              "name": "Gecelik",
+              "parentId": 2870,
+              "subCategories": []
+            },
+            {
+              "id": 561,
+              "name": "Pijama",
+              "parentId": 2870,
+              "subCategories": [
+                {
+                  "id": 562,
+                  "name": "Pijama Altı",
+                  "parentId": 561,
+                  "subCategories": []
+                },
+                {
+                  "id": 563,
+                  "name": "Pijama Takımı",
+                  "parentId": 561,
+                  "subCategories": []
+                },
+                {
+                  "id": 564,
+                  "name": "Pijama Üstü",
+                  "parentId": 561,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2358,
+              "name": "Sabahlık",
+              "parentId": 2870,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 2871,
+          "name": "Üst Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 592,
+              "name": "Body",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 593,
+              "name": "Büstiyer",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 597,
+              "name": "Gömlek",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 601,
+              "name": "Sweatshirt",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 604,
+              "name": "T-Shirt",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 1180,
+              "name": "Bluz & Tunik",
+              "parentId": 2871,
+              "subCategories": [
+                {
+                  "id": 590,
+                  "name": "Bluz",
+                  "parentId": 1180,
+                  "subCategories": []
+                },
+                {
+                  "id": 605,
+                  "name": "Tunik",
+                  "parentId": 1180,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 1185,
+              "name": "Softshell & Polar",
+              "parentId": 2871,
+              "subCategories": []
+            },
+            {
+              "id": 1188,
+              "name": "Kazak & Hırka",
+              "parentId": 2871,
+              "subCategories": [
+                {
+                  "id": 598,
+                  "name": "Hırka",
+                  "parentId": 1188,
+                  "subCategories": []
+                },
+                {
+                  "id": 599,
+                  "name": "Kazak",
+                  "parentId": 1188,
+                  "subCategories": []
+                },
+                {
+                  "id": 600,
+                  "name": "Süveter",
+                  "parentId": 1188,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 2949,
+              "name": "Polo Yaka T-shirt",
+              "parentId": 2871,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 2961,
+          "name": "Büyük Beden",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 2962,
+              "name": "Büyük Beden Elbise",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2963,
+              "name": "Büyük Beden Etek",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2964,
+              "name": "Büyük Beden Gömlek",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2965,
+              "name": "Büyük Beden Abiye Elbise",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2966,
+              "name": "Büyük Beden Pantolon",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2967,
+              "name": "Büyük Beden Sweatshirt",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2968,
+              "name": "Büyük Beden Tayt",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2969,
+              "name": "Büyük Beden T-Shirt",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2970,
+              "name": "Büyük Beden Bluz",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2971,
+              "name": "Büyük Beden Tunik",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2972,
+              "name": "Büyük Beden Ceket",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2973,
+              "name": "Büyük Beden Yelek",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2974,
+              "name": "Büyük Beden Eşofman Altı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2975,
+              "name": "Büyük Beden Kaban",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2976,
+              "name": "Büyük Beden Mont",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2977,
+              "name": "Büyük Beden Hırka",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2978,
+              "name": "Büyük Beden Kazak",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2979,
+              "name": "Büyük Beden Trençkot",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2980,
+              "name": "Büyük Beden Mayo",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2981,
+              "name": "Büyük Beden Tulum",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2982,
+              "name": "Büyük Beden Şort & Bermuda",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 2983,
+              "name": "Büyük Beden Eşofman Takımı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 3535,
+              "name": "Büyük Beden Abiye Takım",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 3609,
+              "name": "Büyük Beden Pijama Altı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 3610,
+              "name": "Büyük Beden Pijama Takımı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 3611,
+              "name": "Büyük Beden Pijama Üstü",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5305,
+              "name": "Büyük Beden Atlet",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5306,
+              "name": "Büyük Beden Alt-Üst Takım",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5307,
+              "name": "Büyük Beden Bikini Altı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5308,
+              "name": "Büyük Beden Body",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5309,
+              "name": "Büyük Beden Bikini Üstü",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5310,
+              "name": "Büyük Beden Gecelik",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5311,
+              "name": "Büyük Beden Jeans",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5312,
+              "name": "Büyük Beden Külot",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5313,
+              "name": "Büyük Beden Spor Sütyeni",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5314,
+              "name": "Büyük Beden Sütyen",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5315,
+              "name": "Büyük Beden Spor Tayt",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5318,
+              "name": "Büyük Beden Süveter",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5321,
+              "name": "Büyük Beden Kimono&Kaftan",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5322,
+              "name": "Büyük Beden Pareo",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5323,
+              "name": "Büyük Beden İç Çamaşırı Takımları",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5324,
+              "name": "Büyük Beden Babydoll",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5325,
+              "name": "Büyük Beden Büstiyer",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5326,
+              "name": "Büyük Beden Korse",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5327,
+              "name": "Büyük Beden Fantezi Gecelik",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5328,
+              "name": "Büyük Beden İç Çamaşırı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5345,
+              "name": "Büyük Beden Bikini Takımı",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5354,
+              "name": "Büyük Beden Külotlu Çorap",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5392,
+              "name": "Büyük Beden Denim Ceket",
+              "parentId": 2961,
+              "subCategories": []
+            },
+            {
+              "id": 5393,
+              "name": "Büyük Beden Deniz Şortu",
+              "parentId": 2961,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 3095,
+          "name": "Fantezi Giyim",
+          "parentId": 522,
+          "subCategories": [
+            {
+              "id": 3096,
+              "name": "Fantezi İç Giyim",
+              "parentId": 3095,
+              "subCategories": [
+                {
+                  "id": 3099,
+                  "name": "Fantezi Atlet",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3100,
+                  "name": "Fantezi Babydoll",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3101,
+                  "name": "Fantezi Boxer",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3102,
+                  "name": "Fantezi Çorap",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3103,
+                  "name": "Fantezi İç Çamaşır Takımları",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3104,
+                  "name": "Fantezi Jartiyer",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3105,
+                  "name": "Fantezi Kombinezon",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3106,
+                  "name": "Fantezi Külot",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3107,
+                  "name": "Fantezi Slip",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3108,
+                  "name": "Fantezi String",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3109,
+                  "name": "Fantezi Sütyen",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3110,
+                  "name": "Fantezi Gecelik",
+                  "parentId": 3096,
+                  "subCategories": []
+                },
+                {
+                  "id": 3111,
+                  "name": "Fantezi Sabahlık",
+                  "parentId": 3096,
+                  "subCategories": []
+                }
+              ]
+            },
+            {
+              "id": 3097,
+              "name": "Fantezi Kostüm",
+              "parentId": 3095,
+              "subCategories": []
+            },
+            {
+              "id": 3098,
+              "name": "Fantezi Aksesuar",
+              "parentId": 3095,
+              "subCategories": []
+            }
+          ]
+        },
+        {
+          "id": 3914,
+          "name": "İş Kıyafetleri",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 4572,
+          "name": "Spor Tulum",
+          "parentId": 522,
+          "subCategories": []
+        },
+        {
+          "id": 5029,
+          "name": "Smokin",
+          "parentId": 522,
+          "subCategories": []
+        }
+      ]
+    },

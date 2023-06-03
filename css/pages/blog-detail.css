@@ -1,43 +1,43 @@
-.single-blog {
+.blog-detail {
   margin: 40px 0;
 }
 
-.single-blog figure img {
+.blog-detail figure img {
   width: 100%;
 }
-.single-blog .single-blog-text-wrapper {
+.blog-detail .blog-detail-text-wrapper {
   margin: 20px 0;
 }
-.single-blog .single-blog-meta {
+.blog-detail .blog-detail-meta {
   display: flex;
   column-gap: 10px;
   font-size: 12px;
 }
-.single-blog .single-blog-meta div {
+.blog-detail .blog-detail-meta div {
   display: flex;
   align-items: center;
 }
-.single-blog .single-blog-meta a.single-tags {
+.blog-detail .blog-detail-meta a.single-tags {
   font-weight: 600;
 }
-.single-blog .single-blog-meta div:not(:last-child):after {
+.blog-detail .blog-detail-meta div:not(:last-child):after {
   content: "";
   width: 15px;
   height: 1px;
   background-color: #e51414;
   margin-left: 10px;
 }
-.single-blog .single-blog-text-wrapper .single-blog-title {
+.blog-detail .blog-detail-text-wrapper .blog-detail-title {
   margin: 20px 0 15px 0;
   font-size: 38px;
   font-weight: 600;
 }
-.single-blog .single-blog-text-wrapper .single-blog-content p {
+.blog-detail .blog-detail-text-wrapper .blog-detail-content p {
   font-size: 14px;
   color: #75767c;
   margin-bottom: 10px;
 }
-.single-blog .single-blog-text-wrapper .single-blog-content blockquote {
+.blog-detail .blog-detail-text-wrapper .blog-detail-content blockquote {
   border-left: 4px solid #dee0ea;
   padding: 20px 30px 2px 50px;
   margin: 20px 0;
