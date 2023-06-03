@@ -103,7 +103,9 @@ function productsArrivalFunc(productArrival) {
         <button>
           <i class="bi bi-heart-fill"></i>
         </button>
-        <a href="product-detail.html">
+        <a href="product-detail.html" class="route-to-cart" data-route-id=${
+          productItem.id
+        }>
           <i class="bi bi-eye-fill"></i>
         </a>
         <a href="#">

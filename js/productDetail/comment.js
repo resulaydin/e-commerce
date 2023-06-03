@@ -41,14 +41,14 @@ const commentAddFunc = () => {
       text: commentText,
       starCount: starCount,
     });
-    console.log(starCount);
+    commentTitle = `${comments.length} reviews for Basic Colored Sweatpants With Elastic Hems`;
     localStorage.setItem("comments", JSON.stringify(comments));
     let result = "";
     comments.forEach((item) => {
       result += ` 
         <li class="comment-item">
             <div class="comment-image">
-                <img src="img/avatars/avatar1.jpg" alt="" />
+                <img src="img/avatars/avatar3.png" alt="" />
             </div>
             <div class="comment-text">
             <ul class="comment-stars">
@@ -68,7 +68,6 @@ const commentAddFunc = () => {
     });
     commentListDOM.innerHTML = result;
     comments.length && (commentTitleDOM.innerHTML = commentTitle);
-    window.location.reload();
   }
 
   commentBtnDOM.addEventListener("click", addComment);
@@ -92,7 +91,7 @@ const commentShowFunc = () => {
     result += ` 
     <li class="comment-item">
         <div class="comment-image">
-            <img src="img/avatars/avatar1.jpg" alt="" />
+            <img src="img/avatars/avatar3.png" alt="" />
         </div>
         <div class="comment-text">
         <ul class="comment-stars">
