@@ -4,10 +4,13 @@ const modalDialogFunc = () => {
   const modalBtnCloseDOM = document.querySelector(".modal-close");
   let isClicked = false;
 
-  window.location.pathname.includes("index.html")
-    ? !modalDialogDOM.classList.contains("show") &&
-      modalDialogDOM.classList.add("show")
-    : "";
+  if (window.location.pathname.includes("index.html")) {
+    if (!modalDialogDOM.classList.contains("show")) {
+      console.log("burası modal");
+      modalDialogDOM.classList.add("show");
+      localStorage.setItem("isLoaded", true);
+    }
+  }
 
   modalDialogWrapperDOM.addEventListener("click", (e) => {
     !modalDialogWrapperDOM.classList.contains(".modal-close") &&
@@ -33,4 +36,4 @@ const modalDialogFunc = () => {
   }, 5000);
 };
 
-export default modalDialogFunc();
+export default modalDialogFunc;
