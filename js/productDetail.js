@@ -66,7 +66,6 @@ findCart
 btnAddToCart.addEventListener("click", function (e) {
   // e.preventDefault();
   const cartChangedCount = Number(productCount.value);
-  console.log(cartChangedCount);
   carts.push({ ...singleProduct, quantity: cartChangedCount });
   localStorage.setItem("carts", JSON.stringify(carts));
   !findCart && (cartCount.innerHTML = carts.length);

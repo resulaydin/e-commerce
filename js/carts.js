@@ -37,7 +37,6 @@ function removeCartItem() {
     button.addEventListener("click", function () {
       const id = button.dataset.cartId;
       carts = carts.filter((cart) => cart.id !== Number(id));
-      console.log(carts.length);
       localStorage.setItem("carts", JSON.stringify(carts));
       cartCount.innerHTML = carts.length;
       cartFunc();

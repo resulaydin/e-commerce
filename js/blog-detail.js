@@ -22,8 +22,6 @@ const blogDetailFunc = () => {
     ".blog-detail-content blockquote>p"
   );
 
-  console.log(blogContentBlockquoteDOM);
-
   const filteredBlog = blogs.find((blog) => blog.id === blogId);
   blogImageDOM.src = filteredBlog.image;
   blogTitleDOM.innerHTML = filteredBlog.headline;

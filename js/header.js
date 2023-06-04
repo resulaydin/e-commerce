@@ -5,15 +5,11 @@ function sidebarFunc() {
   /**
     - Bu şekilde .header-mobile class'ının DOM içerisindeki html kodlarına ulaşıyoruz.
         const btnOpenSlidebar = document.querySelector(".header-mobile");
-        console.log(btnOpenSlidebar);
 */
 
   const btnOpenSlidebar = document.querySelector("#btn-menu");
   const btnCloseSlidebar = document.querySelector("#btn-menu-close");
   const sidebar = document.querySelector("#sidebar");
-  // console.log(btnOpenSlidebar);
-  // console.log(sidebar);
-  // console.log(document);
 
   btnOpenSlidebar.addEventListener("click", function () {
     sidebar.style.left = "0";

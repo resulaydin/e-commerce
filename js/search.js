@@ -48,7 +48,6 @@ const searchProductsShowFunc = (productList) => {
       `;
   });
   searchProductsDOM.innerHTML = result;
-  searchRoute();
 };
 
 const searchRoute = function () {
