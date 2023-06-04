@@ -9,7 +9,7 @@ function blogFunc() {
   blogs.forEach((blog) => {
     result += `
         <li class="blog-item" >
-                <a href="#" class="blog-image">
+                <a href="blog-detail.html" class="blog-image blog-image-link" data-route-image-id="${blog.id}">
                     <img src="${blog.image}" alt="">
                 </a>
                 <div class="blog-info">
@@ -35,8 +35,15 @@ function blogFunc() {
 const blogRoute = function () {
   const blogsCenterRoute = document.querySelectorAll(".blog-center-link");
   const blogsBottomRoute = document.querySelectorAll(".blog-bottom-link");
+  const blogImageRoute = document.querySelectorAll(".blog-image-link");
   let blogId = 0;
 
+  blogImageRoute.forEach((route) => {
+    route.addEventListener("click", (e) => {
+      blogId = parseInt(route.dataset.routeImageId);
+      localStorage.setItem("blogId", JSON.stringify(blogId));
+    });
+  });
   blogsCenterRoute.forEach((route) => {
     route.addEventListener("click", (e) => {
       blogId = parseInt(e.target.dataset.id);

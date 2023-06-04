@@ -17,6 +17,8 @@ let carts = localStorage.getItem("carts")
 /* single product */
 const productId = JSON.parse(localStorage.getItem("routeId"));
 const singleProduct = products.find((item) => item.id === productId);
+console.log("singel:");
+console.log(singleProduct);
 
 /* product title */
 const productTitle = document.querySelector(".details-content .product-title");

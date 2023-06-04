@@ -37,9 +37,16 @@ function addToCart(products) {
 
 function productRoute() {
   const cartsRoute = document.querySelectorAll(".route-to-cart");
+  const cartsRouteImage = document.querySelectorAll(".route-to-cart-image");
   cartsRoute.forEach((route) => {
     route.addEventListener("click", (e) => {
       routeId = Number(e.target.dataset.routeId);
+      localStorage.setItem("routeId", JSON.stringify(routeId));
+    });
+  });
+  cartsRouteImage.forEach((route) => {
+    route.addEventListener("click", (e) => {
+      routeId = Number(route.dataset.routeImageId);
       localStorage.setItem("routeId", JSON.stringify(routeId));
     });
   });
@@ -52,7 +59,9 @@ function productsArrivalFunc(productArrival) {
     result += `             
 <li class="product-item glide__slide">
     <div class="product-image">
-      <a href="">
+      <a href="product-detail.html" class="route-to-cart-image" data-route-image-id="${
+        productItem.id
+      }">
         <img
           class="image-front"
           src=${productItem.img.singleImage}
@@ -129,7 +138,9 @@ function productsFunc(products) {
     result += `             
 <li class="product-item glide__slide">
     <div class="product-image">
-      <a href="">
+    <a href="product-detail.html" class="route-to-cart-image" data-route-image-id="${
+      productItem.id
+    }">
         <img
           class="image-front"
           src=${productItem.img.singleImage}
