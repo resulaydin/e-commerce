@@ -7,7 +7,7 @@ const btnSlideRight = document.querySelector("#btn-slider-rigth");
 
 setInterval(() => {
   plusSlide(1);
-}, 3000);
+}, 5000);
 
 function plusSlide(n) {
   showSlide((slideIndex += n));

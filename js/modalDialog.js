@@ -30,7 +30,7 @@ const modalDialogFunc = () => {
   });
   setTimeout(() => {
     !isClicked && modalDialogDOM.classList.remove("show");
-  }, 20000);
+  }, 5000);
 };
 
 export default modalDialogFunc();
