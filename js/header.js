@@ -64,17 +64,9 @@ function searchModalFunc() {
   });
 }
 
-// 1. Yöntem
-// export default function () {
-//   sidebarFunc();
-//   searchModalFunc();
-// }
-
-// 2. Yöntem
 function HeaderFunc() {
   sidebarFunc();
   searchModalFunc();
 }
 
-// Bu şekilde yazıldığında çağrıldığı yerde sadece import edilmesi yeterlidir.
 export default HeaderFunc();

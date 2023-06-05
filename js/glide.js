@@ -7,11 +7,11 @@ const productArrivalList = document.getElementById("product-list-new");
 export function productGlide() {
   // Product
   const config_1 = {
-    // type: "carousel",
+    type: "carousel",
     perView: 4,
     gap: 20,
     bound: true,
-    // autoplay: 2000,
+    autoplay: 2000,
     breakpoints: {
       992: {
         perView: 3,
@@ -31,11 +31,11 @@ export function productGlide() {
 export function productArrivalGlide() {
   // New Arrivals
   const config_2 = {
-    // type: "carousel",
+    type: "carousel",
     perView: 4,
     gap: 20,
     bound: true,
-    // autoplay: 2000,
+    autoplay: 2000,
     breakpoints: {
       992: { perView: 3 },
       768: { perView: 2 },
