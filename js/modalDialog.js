@@ -6,7 +6,6 @@ const modalDialogFunc = () => {
 
   if (window.location.pathname.includes("index.html")) {
     if (!modalDialogDOM.classList.contains("show")) {
-      console.log("burası modal");
       modalDialogDOM.classList.add("show");
       localStorage.setItem("isLoaded", true);
     }
